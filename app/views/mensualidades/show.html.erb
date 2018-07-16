@@ -1,0 +1,76 @@
+<%if @credito %>
+
+  <header>
+    <h1 >Mensualidades</h1>
+  </header>
+
+<% @credito.mensualidad.each do |mensualidad| %>
+<% @nuMens = mensualidad.no_mensualidad %>
+
+
+<div align="center">
+  <div 
+      style=" width: 80%;"  
+      type="button" 
+      class="btn btn-info" 
+      data-toggle="collapse"          
+      data-target="#demo_@nuMens">Mensualidad:<%=mensualidad.clave_mensualidad%>        
+  </div>
+
+  <div id="demo_@nuMens" class="collapse" aria-expanded="false">  
+    <table  style="width: 80%" class="table table-bordered " style="background-color:#fff;">
+        <thead style=" background-color: #EEE;"> 
+           <tr>
+              <th align="left">Numero De Pago</th>
+              <th align="left">Fecha Vencimiento</th>
+              <th align="left">Interes</th>
+              <th align="left">Capital</th>
+              <th align="left">Saldo</th>
+              <th align="left">Abonos</th>
+            </tr>
+        </thead>
+        <%if mensualidad.fecha_vencimiento < Date.today  %>
+        <tbody>
+          <tr>
+            <td  class='alert alert-danger'><%=mensualidad.no_mensualidad%></td>
+            <td class='alert alert-danger'><%=mensualidad.fecha_vencimiento%></td>
+            <td  class='alert alert-danger '><%=mensualidad.interes%></td>
+            <td class='alert alert-danger '><%=mensualidad.capital%></td>
+            <td  class='alert alert-danger '><%=mensualidad.saldo%></td>
+            <td class='alert alert-danger '>
+              <%= link_to '<button type="button" class="button-slim">Ir</button>'.
+                  html_safe,abonocredito_url(mensualidad.clave_mensualidad) %>
+           </td>
+          </tr>
+        </tbody>                  
+
+
+        <%else%>
+          <tr>
+            <td  class='alert alert-success '><%=mensualidad.no_mensualidad%></td>
+            <td  class='alert alert-success '><%=mensualidad.fecha_vencimiento%></td>
+            <td  class='alert alert-success'><%=mensualidad.interes%></td>
+            <td class='alert alert-success '><%=mensualidad.capital%></td>
+            <td  class='alert alert-success '><%=mensualidad.saldo%></td>
+            <td class='alert alert-success '>
+              <%= link_to '<button type="button" class="button-slim">Ir</button>'.
+                            html_safe,abonocredito_url(mensualidad.clave_mensualidad) %>
+            </td>
+          </tr>
+        <%end%>  
+
+      </table>    
+      </div>
+     <%end%> 
+  </div>
+
+     <%else%>
+    <p align="center" >No se encuentra esa mensualidad activa!</p>
+                
+<%end%>
+
+  
+
+    
+
+

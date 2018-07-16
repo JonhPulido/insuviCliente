@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <%@demandas.each do |demanda| %>
+    <%if demanda.id_demanda == @demanda.id_demanda%>
+
+    <header> 
+      <h1 align="center">Hola <%=@cliente.nombre.downcase%> Estos son tus creditos</h1>
+    </header>
+
+    <div align="center" > 
+    <div style=" width: 80%;"  type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Clave: <%=demanda.credito.clave_credito%></div>
+      <div id="demo" class="collapse">
+      <table class="table table-bordered" style="background-color:#fff; width: 80%;">
+         <thead style="background-color: #EEE;">
+          <tr>
+              <th align="left">Clave Credito</th>
+              <th align="left">Valor Solucion</th>
+              <th align="left">Costo Contado</th>
+              <th align="left">Costo Financiamiento</th>
+              <th align="left">Pago Mensual</th>
+              <th align="center">Mensualidades</th>            
+          </tr>
+         </thead>
+
+          <tr>
+              <td align="left"><%=demanda.credito.clave_credito%></td>
+              <td align="left"><%=demanda.credito.valor_solucion%></td>
+              <td align="left"><%=demanda.credito.costo_contado%></td>
+              <td align="left"><%=demanda.credito.costo_financiamiento%></td>
+              <td align="left"><%=demanda.credito.pago_mensual%></td>
+              <td align="center">
+              <%= link_to '<button type="button" class="button-slim">Ir</button>'.
+                  html_safe,mensualidade_url(@demanda.credito.clave_credito) %>
+              </td>
+          </tr>
+        </table> 
+    </div>
+    </div> 
+
+        <% end %>
+      <% end %>
+  </body>
+</html>
+
+
+
+
+
+

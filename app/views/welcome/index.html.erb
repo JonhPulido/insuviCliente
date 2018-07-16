@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+</head>
+
+  <body >
+    <% if person_signed_in? %>
+
+    	<header >
+        <h2 align="center"  >
+            Bienvenido <%=@cliente.nombre.downcase %> al modulo para clientes Insuvi
+          </h2>
+        
+      </header>
+    	<div align="center"  style="margin: 50px; " >
+
+          
+          <br>
+          <br>
+          <h1>
+                <%= link_to '<button type="button" class="button">Demandas</button>'.
+                html_safe,demanda_url(@cliente.id) %>
+               
+          </h1>
+           <h1>
+                <%= link_to '<button type="button" class="button">Creditos</button>'.
+                html_safe,demanda_url(@cliente.id) %>
+               
+          </h1>
+
+      </div>
+     
+
+
+    <% else %>
+    
+<header >
+  <h1 >Bienvenido a la pagina de inicio</h1>
+</header>
+    
+
+     <div align="center" class="center-div" >
+      <br>
+      
+      <p>Registrate:</p>
+     
+      	
+         <%= link_to '<button type="button" class="button">Sign In</button>'.html_safe, new_person_registration_path %> 
+
+      
+      
+      <br>
+      <br>
+
+      <p>Iniciar Sesion:</p>
+
+      <%= link_to '<button type="button" class="button">Login</button>'.html_safe, new_person_session_path %> 
+      
+      </div>
+      
+
+    <% end -%>
+
+  </body>
+</html>
+
+
+

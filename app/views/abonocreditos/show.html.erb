@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abonos</title>
+</head>
+<body>
+
+
+<%if @mensualidad %>
+<header>
+    <h1 >Abons a mensualidad</h1>
+</header>
+<div style="margin: 50px "> 
+<table  style="width: 100%" class="table table-bordered" style="background-color:#fff;">
+	
+    <thead style=" background-color: #EEE;">
+          <tr>
+              <th align="left">Numero De Pago</th>
+              <th align="left">Fecha</th>
+              <th align="left">Interes</th>
+              <th align="left">Capital</th>
+              
+          </tr>
+    </thead>       
+
+          <% @mensualidad.abonocredito.each do |abono| %>
+                <tr>
+                    <td align="center"><%=abono.no_pago%></td>
+                    <td align="left"><%=abono.fecha%></td>
+                    <td align="left"><%=abono.interes%></td>
+                    <td align="left"><%=abono.capital%></td>
+                </tr>
+          <% end -%>
+   </table>
+
+   <%else%>
+    <div align="center" >
+    <h1 align="center">No hemos localizado este abono!</h1> 
+    </div>
+   
+
+
+ <% end -%>
+</div>
+
+
+   
+
+</body>
+</html>

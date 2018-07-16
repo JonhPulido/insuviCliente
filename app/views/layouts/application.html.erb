@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insuvi</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    
+      
+        <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p> 
+        <% end %>
+
+      <div>
+         
+          <div class="flex-container">
+              <div class="flex-container" >
+               <a class="navbar-link">Programas</a> 
+              </div>
+
+              <div class="flex-container">
+                <%= link_to 'Editar perfil', edit_person_registration_path(current_person), :class =>'navbar-link'%>
+                
+              </div>
+                
+              <div class="flex-container"> 
+                <%= link_to "Salir", destroy_person_session_path, method: :delete, :class => 'navbar-link'%>
+               
+              </div>
+          </div>    
+
+            
+   
+
+<div class="footer">
+Logged in as:
+<strong><%= current_person.email %></strong><br>
+</div>
+                
+
+
+
+        
+
+
+  <%= yield %>
+
+
+          
+  </body>
+
+</html>

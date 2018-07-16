@@ -1,0 +1,23 @@
+ <h1>CLIENTES</h1>
+ <table style="width:100%">
+  <tr>
+    <th align="left">Nombre</th>
+    <th align="left">CURP</th>
+    <th align="left">FECHA NACIMIENTO</th>
+  </tr>
+
+  <tr>
+    <td align="left"><%=@cliente.nombre%></td>
+    <td align="left"><%=@cliente.curp%></td>
+    <td align="left"><%=@cliente.fecha_nac%></td>
+    <td><%=link_to "Mostrar", @cliente%></td>
+     <td><%=link_to "Demandas", demanda_url(@cliente)%></td>
+  </tr>
+
+</table> 
+
+<%=link_to "Volver", root_path%>
+
+
+
+

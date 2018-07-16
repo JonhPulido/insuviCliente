@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<header >
+    <h1 align="center">Hola  <%=@cliente.nombre.downcase%> estas son tu demandas</h1>
+</header>
+    
+
+
+    <% @ban=@cliente.demandas.empty?%>
+
+
+    <%@cliente.demandas.any? do%> 
+
+<div class="row" style="margin:50px;"  id="div-alert-detventa">
+
+
+
+      <table class="table table-bordered" style="background-color:#fff;">
+        <thead style=" background-color: #EEE;">
+          <th >MODULO</th>
+          <th>TIPO CLIENTE</th>
+          <th>ENGANCHE</th>
+          <th>ESTADO</th>
+          <th>CREDITO</th>
+        </thead>
+
+         <% @cliente.demandas.each do |demanda| %>
+          <tr>
+              <td align="left"><%=demanda.modulo%></td>
+              <td align="left"><%=demanda.tipo_cliente%></td>
+              <td align="left"><%=demanda.enganche%></td>
+              <td align="left"><%=demanda.estatus%></td>
+              <td align="left">
+                <%= link_to '<button type="button" class="button-slim">Ir</button>'.
+                html_safe,credito_url(demanda.id_demanda) %>
+             </td>
+           
+           
+              
+         
+       
+    <%end%>
+
+
+        <tbody>
+         
+        </tbody>
+      </table>  
+    </div>
+
+
+
+
+
+    <%end%>
+
+
+
+    <%if @ban == true %> 
+    <p>No hay demandas pendientes</p>
+    <%end%>
+    <br>
+    <%=link_to "Volver", root_path%>
+
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,4896 @@
+
+---
+abono_ahorrador:
+  columns:
+  - folio
+  - no_pago
+  - fecha
+  - abono
+  - ahorrador_clave
+  - registrado
+  records: 
+  - - 151515
+    - 1
+    - 2018-01-05
+    - 200.5
+    - MA020400001A1
+    - '0'
+  - - 151515
+    - 2
+    - 2018-01-05
+    - 2399.5
+    - MA020400001A1
+    - '0'
+  - - 151515
+    - 1
+    - 2018-01-05
+    - 1400.0
+    - CL020400002A1
+    - '0'
+  - - 151515
+    - 2
+    - 2018-01-05
+    - 600.0
+    - CL020400002A1
+    - '0'
+  - - 151515
+    - 1
+    - 2018-01-05
+    - 1500.0
+    - TE020300003A1
+    - '0'
+  - - 151515
+    - 1
+    - 2018-01-05
+    - 1000.0
+    - MA020400004A1
+    - '0'
+
+---
+abono_credito:
+  columns:
+  - folio
+  - no_pago
+  - fecha
+  - abono
+  - mensualidad_clave
+  - interes
+  - capital
+  - moratorio
+  - registrado
+  records: 
+  - - 12002
+    - 1 - 1
+    - 2018-01-06
+    - !ruby/object:BigDecimal 27:0.70765E3
+    - MA020400001ME1
+    - !ruby/object:BigDecimal 27:0.23266792899971E3
+    - !ruby/object:BigDecimal 27:0.4749820710003E3
+    - !ruby/object:BigDecimal 18:0.0
+    - '0'
+  - - 12002
+    - 1 - 1
+    - 2018-01-06
+    - !ruby/object:BigDecimal 27:0.90284E3
+    - MA020400001ME-RE11
+    - !ruby/object:BigDecimal 27:0.23333326666667E3
+    - !ruby/object:BigDecimal 27:0.66950673333333E3
+    - !ruby/object:BigDecimal 18:0.0
+    - '0'
+
+---
+ahorrador:
+  columns:
+  - clave_ahorrador
+  - monto_total
+  - pagado
+  - total_abonado
+  - eliminado
+  - demanda_id
+  - created_at
+  - updated_at
+  records: 
+  - - CL020400002A1
+    - 2000.0
+    - true
+    - 2000.0
+    - false
+    - 2
+    - 2018-01-05
+    - 2018-01-05
+  - - CL040700007A1
+    - 1600.0
+    - false
+    - 0.0
+    - false
+    - 7
+    - 2018-01-05
+    - 2018-01-05
+  - - CL061000005A1
+    - 1000.0
+    - false
+    - 0.0
+    - false
+    - 5
+    - 2018-01-05
+    - 2018-01-07
+  - - CL061000006A1
+    - 1375.0
+    - false
+    - 0.0
+    - false
+    - 6
+    - 2018-01-05
+    - 2018-01-05
+  - - MA020400001A1
+    - 2600.0
+    - true
+    - 2600.0
+    - false
+    - 1
+    - 2018-01-05
+    - 2018-01-05
+  - - MA020400004A1
+    - 1200.0
+    - false
+    - 1000.0
+    - true
+    - 4
+    - 2018-01-05
+    - 2018-01-05
+  - - TE020300003A1
+    - 1500.0
+    - true
+    - 1500.0
+    - false
+    - 3
+    - 2018-01-05
+    - 2018-01-05
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2018-02-24 00:05:08.000000000 Z
+    - 2018-02-24 00:05:08.000000000 Z
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Que onda
+    - jelow amigos
+    - 2018-02-20 00:03:20.000000000 Z
+    - 2018-02-20 00:03:20.000000000 Z
+
+---
+caja:
+  columns:
+  - id_caja
+  - modulo
+  - folio_inicio
+  - folio_final
+  - folio_actual
+  - estatus
+  - usuario_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - COLIMA
+    - 1
+    - 500
+    - 1
+    - true
+    - 2
+    - 2017-12-05
+    - 2018-01-07
+
+---
+cambio_domicilio:
+  columns:
+  - id_domicilio
+  - domicilio
+  - cliente_id
+  - creado
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 'AVENIDA MANZANILLO # 128 - 0, Colonia: ORIENTAL, Localidad: COLIMA, COLIMA,
+      COLIMA'
+    - 4
+    - ''
+    - 2017-11-30
+    - 2017-11-30
+
+---
+cat_banco:
+  columns:
+  - id_banco
+  - nombre
+  - cuenta
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - BANAMEX
+    - '6936602759275928'
+    - true
+    - 2017-11-29
+    - 2018-01-02
+  - - 2
+    - BANCOMER
+    - '1057846295620573'
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 3
+    - BANORTE
+    - '6473834728198453'
+    - true
+    - 2017-11-29
+    - 2017-11-29
+
+---
+cat_calle:
+  columns:
+  - id_calle
+  - nombre
+  - estatus
+  - colonia_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - AVENIDA MANZANILLO
+    - true
+    - 13
+    - 2017-11-29 16:12:58.000000000 Z
+    - 2018-01-01 22:03:31.000000000 Z
+  - - 2
+    - FLOR DE COCO
+    - true
+    - 1
+    - 2017-11-29 16:13:20.000000000 Z
+    - 2017-11-29 16:13:20.000000000 Z
+  - - 3
+    - ENCINO
+    - true
+    - 12
+    - 2017-11-29 16:15:05.000000000 Z
+    - 2017-11-29 16:15:05.000000000 Z
+  - - 4
+    - DE LA ROSA
+    - true
+    - 12
+    - 2017-11-29 16:15:22.000000000 Z
+    - 2017-11-29 16:15:22.000000000 Z
+  - - 5
+    - SAN ANGEL
+    - true
+    - 14
+    - 2017-11-29 16:16:37.000000000 Z
+    - 2017-11-29 16:16:37.000000000 Z
+  - - 6
+    - TECUANILLO
+    - true
+    - 14
+    - 2017-11-29 16:16:56.000000000 Z
+    - 2017-11-29 16:16:56.000000000 Z
+  - - 7
+    - MOCTEZUMA
+    - true
+    - 5
+    - 2017-11-29 16:17:37.000000000 Z
+    - 2017-11-29 16:17:37.000000000 Z
+  - - 8
+    - PEDRO GALVAN
+    - true
+    - 6
+    - 2017-11-29 16:18:11.000000000 Z
+    - 2017-11-29 16:18:11.000000000 Z
+  - - 9
+    - CONSTITUCION
+    - true
+    - 9
+    - 2017-11-29 16:18:35.000000000 Z
+    - 2017-11-29 16:18:35.000000000 Z
+  - - 10
+    - GARDENIA
+    - true
+    - 15
+    - 2017-11-29 16:19:49.000000000 Z
+    - 2017-11-29 16:19:49.000000000 Z
+  - - 11
+    - DE LA MORA
+    - true
+    - 7
+    - 2017-11-29 16:21:15.000000000 Z
+    - 2017-11-29 16:21:15.000000000 Z
+  - - 12
+    - RUBY
+    - true
+    - 11
+    - 2017-11-29 16:22:02.000000000 Z
+    - 2017-11-29 16:22:02.000000000 Z
+  - - 13
+    - 5 DE MAYO
+    - true
+    - 17
+    - 2017-11-29 16:23:15.000000000 Z
+    - 2018-01-01 22:03:24.000000000 Z
+  - - 14
+    - CARRETERA COLIMA MANZANILLO
+    - true
+    - 18
+    - 2017-11-29 17:11:38.000000000 Z
+    - 2017-11-29 17:11:38.000000000 Z
+
+---
+cat_colonia:
+  columns:
+  - id_colonia
+  - nombre
+  - abreviacion
+  - estatus
+  - localidad_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - EL CAMPANARIO
+    - CAMP
+    - true
+    - 14
+    - 2017-11-29 15:39:54.000000000 Z
+    - 2017-11-29 15:39:54.000000000 Z
+  - - 2
+    - MELCHOR OCAMPO
+    - MLOC
+    - true
+    - 1
+    - 2017-11-29 15:42:18.000000000 Z
+    - 2017-11-29 15:42:18.000000000 Z
+  - - 3
+    - JOSE AHUMADA
+    - JSAH
+    - true
+    - 13
+    - 2017-11-29 15:42:57.000000000 Z
+    - 2017-11-29 15:42:57.000000000 Z
+  - - 4
+    - PINO SUAREZ
+    - PNSZ
+    - true
+    - 3
+    - 2017-11-29 15:45:44.000000000 Z
+    - 2017-11-29 15:45:44.000000000 Z
+  - - 5
+    - CORREGIDORA
+    - CRGR
+    - true
+    - 15
+    - 2017-11-29 15:46:47.000000000 Z
+    - 2017-11-29 15:50:26.000000000 Z
+  - - 6
+    - JUAREZ
+    - JARZ
+    - true
+    - 17
+    - 2017-11-29 15:47:57.000000000 Z
+    - 2017-11-29 15:47:57.000000000 Z
+  - - 7
+    - PIEDRA SANTA
+    - PDST
+    - true
+    - 8
+    - 2017-11-29 15:51:49.000000000 Z
+    - 2017-11-29 15:51:49.000000000 Z
+  - - 8
+    - PRADOS CLAROS
+    - PRCL
+    - true
+    - 11
+    - 2017-11-29 15:52:18.000000000 Z
+    - 2017-11-29 15:52:18.000000000 Z
+  - - 9
+    - PROGRESO
+    - PRGS
+    - true
+    - 10
+    - 2017-11-29 15:52:58.000000000 Z
+    - 2017-11-29 15:52:58.000000000 Z
+  - - 10
+    - TERMOELECTRICA
+    - TMCA
+    - true
+    - 22
+    - 2017-11-29 15:55:46.000000000 Z
+    - 2017-11-29 15:55:46.000000000 Z
+  - - 11
+    - LAS HADAS
+    - LSHD
+    - true
+    - 21
+    - 2017-11-29 16:01:03.000000000 Z
+    - 2017-11-29 16:01:03.000000000 Z
+  - - 12
+    - RESIDENCIAL TULIPANES
+    - RSTL
+    - true
+    - 23
+    - 2017-11-29 16:12:07.000000000 Z
+    - 2017-11-29 16:12:07.000000000 Z
+  - - 13
+    - ORIENTAL
+    - ORTL
+    - true
+    - 13
+    - 2017-11-29 16:12:29.000000000 Z
+    - 2017-11-29 16:12:29.000000000 Z
+  - - 14
+    - INDECO
+    - INDC
+    - true
+    - 19
+    - 2017-11-29 16:16:12.000000000 Z
+    - 2017-11-29 16:16:12.000000000 Z
+  - - 15
+    - LOS MONOS
+    - LSMN
+    - true
+    - 16
+    - 2017-11-29 16:19:23.000000000 Z
+    - 2017-11-29 16:19:23.000000000 Z
+  - - 16
+    - ARBOLEDAS
+    - ABLD
+    - true
+    - 17
+    - 2017-11-29 16:20:45.000000000 Z
+    - 2018-01-01 20:41:10.000000000 Z
+  - - 17
+    - LA LOMITA
+    - LALT
+    - true
+    - 20
+    - 2017-11-29 16:22:51.000000000 Z
+    - 2017-11-29 16:22:51.000000000 Z
+  - - 18
+    - EL TRAPICHE
+    - ELTP
+    - true
+    - 9
+    - 2017-11-29 17:11:09.000000000 Z
+    - 2017-11-29 17:11:09.000000000 Z
+
+---
+cat_documento:
+  columns:
+  - id_documento
+  - nombre
+  - estatus
+  - opcional
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - CURP
+    - true
+    - false
+    - 2017-11-29 15:29:43.000000000 Z
+    - 2017-11-29 15:29:43.000000000 Z
+  - - 2
+    - ACTA DE NACIMIENTO
+    - true
+    - false
+    - 2017-11-29 15:30:19.000000000 Z
+    - 2017-11-29 15:30:19.000000000 Z
+  - - 3
+    - ACTA DE MATRIMONIO
+    - true
+    - true
+    - 2017-11-29 15:31:12.000000000 Z
+    - 2018-01-01 23:13:12.000000000 Z
+  - - 4
+    - COMPROBANTE DE NO ADEUDO
+    - true
+    - false
+    - 2017-11-29 15:31:36.000000000 Z
+    - 2017-11-29 15:31:36.000000000 Z
+  - - 5
+    - COMPROBANTE DE DOMICILIO
+    - true
+    - false
+    - 2017-11-29 15:32:07.000000000 Z
+    - 2017-11-29 15:32:07.000000000 Z
+  - - 6
+    - RFC
+    - true
+    - false
+    - 2017-11-29 15:32:39.000000000 Z
+    - 2017-11-29 15:32:39.000000000 Z
+  - - 7
+    - IDENTIFICACION OFICIAL
+    - true
+    - false
+    - 2017-11-29 15:45:16.000000000 Z
+    - 2017-11-29 15:45:16.000000000 Z
+  - - 8
+    - CARTILLA MILITAR
+    - false
+    - true
+    - 2018-01-01 23:13:33.000000000 Z
+    - 2018-01-01 23:14:21.000000000 Z
+
+---
+cat_estado:
+  columns:
+  - id_estado
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - COLIMA
+    - true
+    - 2017-11-29 15:22:22.000000000 Z
+    - 2018-01-01 19:02:42.000000000 Z
+
+---
+cat_grupo_atencion:
+  columns:
+  - id_grupo
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - PERSONAS DE LA TERCERA EDAD
+    - true
+    - 2017-11-29 16:44:15.000000000 Z
+    - 2017-11-29 16:44:15.000000000 Z
+  - - 2
+    - DISCAPACITADOS
+    - true
+    - 2017-11-29 16:44:58.000000000 Z
+    - 2018-01-02 01:56:31.000000000 Z
+  - - 3
+    - JOVENES
+    - true
+    - 2017-11-29 17:26:28.000000000 Z
+    - 2017-11-29 17:26:28.000000000 Z
+  - - 4
+    - PADRES DE FAMILIA
+    - true
+    - 2017-11-29 17:26:58.000000000 Z
+    - 2017-11-29 17:26:58.000000000 Z
+
+---
+cat_localidad:
+  columns:
+  - id_localidad
+  - nombre
+  - estatus
+  - municipio_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - RINCO DE LOPEZ
+    - true
+    - 5
+    - 2017-11-29 15:28:15.000000000 Z
+    - 2017-11-29 15:28:15.000000000 Z
+  - - 2
+    - COHALATILLA
+    - true
+    - 5
+    - 2017-11-29 15:28:42.000000000 Z
+    - 2017-11-29 15:28:42.000000000 Z
+  - - 3
+    - CARDONA
+    - true
+    - 1
+    - 2017-11-29 15:28:55.000000000 Z
+    - 2017-11-29 15:28:55.000000000 Z
+  - - 4
+    - LA CAPACHA
+    - true
+    - 1
+    - 2017-11-29 15:29:18.000000000 Z
+    - 2017-11-29 15:29:18.000000000 Z
+  - - 5
+    - NOGUERAS
+    - true
+    - 3
+    - 2017-11-29 15:29:57.000000000 Z
+    - 2017-11-29 15:29:57.000000000 Z
+  - - 6
+    - ZUCHITLAN
+    - true
+    - 3
+    - 2017-11-29 15:30:12.000000000 Z
+    - 2017-11-29 15:30:12.000000000 Z
+  - - 7
+    - AGUA DE LA VIRGEN
+    - true
+    - 6
+    - 2017-11-29 15:31:09.000000000 Z
+    - 2018-01-01 20:31:16.000000000 Z
+  - - 8
+    - EL CAMICHIN
+    - true
+    - 6
+    - 2017-11-29 15:31:39.000000000 Z
+    - 2017-11-29 15:31:39.000000000 Z
+  - - 9
+    - EL TRAPICHE
+    - true
+    - 10
+    - 2017-11-29 15:32:14.000000000 Z
+    - 2017-11-29 15:32:14.000000000 Z
+  - - 10
+    - ALCARACES
+    - true
+    - 10
+    - 2017-11-29 15:32:40.000000000 Z
+    - 2017-11-29 15:32:40.000000000 Z
+  - - 11
+    - CERRO DE ORTEGA
+    - true
+    - 9
+    - 2017-11-29 15:33:08.000000000 Z
+    - 2017-11-29 15:33:08.000000000 Z
+  - - 12
+    - MADRID
+    - true
+    - 9
+    - 2017-11-29 15:33:27.000000000 Z
+    - 2017-11-29 15:33:27.000000000 Z
+  - - 13
+    - COLIMA
+    - true
+    - 1
+    - 2017-11-29 15:36:37.000000000 Z
+    - 2017-11-29 15:36:37.000000000 Z
+  - - 14
+    - ARMERIA
+    - true
+    - 5
+    - 2017-11-29 15:36:45.000000000 Z
+    - 2017-11-29 15:36:45.000000000 Z
+  - - 15
+    - COMALA
+    - true
+    - 3
+    - 2017-11-29 15:36:54.000000000 Z
+    - 2017-11-29 15:36:54.000000000 Z
+  - - 16
+    - CUAUHTEMOC
+    - true
+    - 10
+    - 2017-11-29 15:37:13.000000000 Z
+    - 2017-11-29 15:37:13.000000000 Z
+  - - 17
+    - COQUIMATLAN
+    - true
+    - 4
+    - 2017-11-29 15:37:28.000000000 Z
+    - 2017-11-29 15:37:28.000000000 Z
+  - - 18
+    - IXTLAHUACAN
+    - true
+    - 6
+    - 2017-11-29 15:37:40.000000000 Z
+    - 2017-11-29 15:37:40.000000000 Z
+  - - 19
+    - TECOMAN
+    - true
+    - 9
+    - 2017-11-29 15:37:50.000000000 Z
+    - 2017-11-29 15:37:50.000000000 Z
+  - - 20
+    - MINATITLAN
+    - true
+    - 7
+    - 2017-11-29 15:38:05.000000000 Z
+    - 2017-11-29 15:38:05.000000000 Z
+  - - 21
+    - LAS HADAS
+    - true
+    - 8
+    - 2017-11-29 15:54:30.000000000 Z
+    - 2017-11-29 15:54:30.000000000 Z
+  - - 22
+    - COLOMOS
+    - true
+    - 8
+    - 2017-11-29 15:54:50.000000000 Z
+    - 2017-11-29 15:54:50.000000000 Z
+  - - 23
+    - VILLA DE ALVAREZ
+    - true
+    - 2
+    - 2017-11-29 16:01:42.000000000 Z
+    - 2017-11-29 16:01:42.000000000 Z
+
+---
+cat_mejoramiento:
+  columns:
+  - id_mejoramiento
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - RECAMARA ADICIONAL
+    - true
+    - 2017-11-29 16:30:09.000000000 Z
+    - 2017-11-29 16:30:09.000000000 Z
+  - - 2
+    - BAÑO
+    - true
+    - 2017-11-29 16:30:25.000000000 Z
+    - 2018-01-02 02:05:19.000000000 Z
+  - - 3
+    - COCINA
+    - true
+    - 2017-11-29 16:30:31.000000000 Z
+    - 2017-11-29 16:30:31.000000000 Z
+  - - 4
+    - PISO
+    - true
+    - 2017-11-29 16:30:36.000000000 Z
+    - 2017-11-29 16:30:36.000000000 Z
+  - - 5
+    - MURO
+    - true
+    - 2017-11-29 16:30:58.000000000 Z
+    - 2017-11-29 16:30:58.000000000 Z
+
+---
+cat_municipio:
+  columns:
+  - id_municipio
+  - nombre
+  - estatus
+  - estado_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - COLIMA
+    - true
+    - 1
+    - 2017-11-29 15:22:34.000000000 Z
+    - 2017-11-29 15:22:34.000000000 Z
+  - - 2
+    - VILLA DE ALVAREZ
+    - true
+    - 1
+    - 2017-11-29 15:22:45.000000000 Z
+    - 2017-11-29 15:22:45.000000000 Z
+  - - 3
+    - COMALA
+    - true
+    - 1
+    - 2017-11-29 15:22:53.000000000 Z
+    - 2017-11-29 15:22:53.000000000 Z
+  - - 4
+    - COQUIMATLAN
+    - true
+    - 1
+    - 2017-11-29 15:23:16.000000000 Z
+    - 2017-11-29 15:23:16.000000000 Z
+  - - 5
+    - ARMERIA
+    - true
+    - 1
+    - 2017-11-29 15:23:23.000000000 Z
+    - 2018-01-01 19:54:15.000000000 Z
+  - - 6
+    - IXTLAHUACAN
+    - true
+    - 1
+    - 2017-11-29 15:23:51.000000000 Z
+    - 2017-11-29 15:23:51.000000000 Z
+  - - 7
+    - MINATITLAN
+    - true
+    - 1
+    - 2017-11-29 15:24:01.000000000 Z
+    - 2017-11-29 15:24:01.000000000 Z
+  - - 8
+    - MANZANILLO
+    - true
+    - 1
+    - 2017-11-29 15:24:12.000000000 Z
+    - 2017-11-29 15:24:12.000000000 Z
+  - - 9
+    - TECOMAN
+    - true
+    - 1
+    - 2017-11-29 15:26:54.000000000 Z
+    - 2017-11-29 15:26:54.000000000 Z
+  - - 10
+    - CUAUHTEMOC
+    - true
+    - 1
+    - 2017-11-29 15:27:48.000000000 Z
+    - 2017-11-29 15:27:48.000000000 Z
+
+---
+cat_muro:
+  columns:
+  - id_muro
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - LADRILLO
+    - true
+    - 2017-11-29 16:28:24.000000000 Z
+    - 2017-11-29 16:28:24.000000000 Z
+  - - 2
+    - TABLA ROCA
+    - true
+    - 2017-11-29 16:28:32.000000000 Z
+    - 2017-11-29 16:28:32.000000000 Z
+  - - 3
+    - MADERA
+    - true
+    - 2017-11-29 16:28:41.000000000 Z
+    - 2017-11-29 16:28:41.000000000 Z
+  - - 4
+    - LAMINA
+    - true
+    - 2017-11-29 16:28:50.000000000 Z
+    - 2017-11-29 16:28:50.000000000 Z
+  - - 5
+    - AGLOMERADO
+    - true
+    - 2017-11-29 16:29:05.000000000 Z
+    - 2018-01-02 01:48:53.000000000 Z
+
+---
+cat_ocupacion:
+  columns:
+  - id_ocupacion
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ESTUDIANTE
+    - true
+    - 2017-11-29 16:56:38.000000000 Z
+    - 2017-11-29 16:56:38.000000000 Z
+  - - 2
+    - CARPINTERO
+    - true
+    - 2017-11-29 16:57:02.000000000 Z
+    - 2017-11-29 16:57:02.000000000 Z
+  - - 3
+    - TAXISTA
+    - true
+    - 2017-11-29 16:57:11.000000000 Z
+    - 2017-11-29 16:57:11.000000000 Z
+  - - 4
+    - COMERCIANTE
+    - true
+    - 2017-11-29 16:57:18.000000000 Z
+    - 2017-11-29 16:57:18.000000000 Z
+  - - 5
+    - ABOGADO
+    - true
+    - 2017-11-29 17:06:55.000000000 Z
+    - 2018-01-01 23:47:39.000000000 Z
+  - - 6
+    - MAESTRO
+    - true
+    - 2017-11-29 17:07:04.000000000 Z
+    - 2017-11-29 17:07:04.000000000 Z
+  - - 7
+    - ARQUITECTO
+    - true
+    - 2017-11-29 17:07:14.000000000 Z
+    - 2017-11-29 17:07:14.000000000 Z
+
+---
+cat_piso:
+  columns:
+  - id_piso
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - FIRME
+    - true
+    - 2017-11-29 16:27:32.000000000 Z
+    - 2017-11-29 16:27:32.000000000 Z
+  - - 2
+    - TIERRA
+    - true
+    - 2017-11-29 16:27:39.000000000 Z
+    - 2017-11-29 16:27:39.000000000 Z
+  - - 3
+    - BITROPISO
+    - true
+    - 2017-11-29 16:27:46.000000000 Z
+    - 2018-01-02 01:42:16.000000000 Z
+  - - 4
+    - MADERA
+    - true
+    - 2017-11-29 16:27:54.000000000 Z
+    - 2017-11-29 16:27:54.000000000 Z
+  - - 5
+    - AZULEJO
+    - true
+    - 2017-11-29 16:28:10.000000000 Z
+    - 2018-01-02 01:16:11.000000000 Z
+
+---
+cat_regimen_propiedad:
+  columns:
+  - id_propiedad
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - RENTADA
+    - true
+    - 2017-11-29 16:52:27.000000000 Z
+    - 2017-11-29 16:52:27.000000000 Z
+  - - 2
+    - PROPIA PAGANDOLA
+    - true
+    - 2017-11-29 16:52:38.000000000 Z
+    - 2017-11-29 16:52:38.000000000 Z
+  - - 3
+    - ESCRITURADA
+    - true
+    - 2017-11-29 16:52:54.000000000 Z
+    - 2018-01-02 02:00:59.000000000 Z
+
+---
+cat_techo:
+  columns:
+  - id_techo
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - MADERA
+    - true
+    - 2017-11-29 16:26:24.000000000 Z
+    - 2017-11-29 16:26:24.000000000 Z
+  - - 2
+    - TEJA LAMINA
+    - true
+    - 2017-11-29 16:26:36.000000000 Z
+    - 2017-11-29 16:26:36.000000000 Z
+  - - 3
+    - TEJA BARRO
+    - true
+    - 2017-11-29 16:26:43.000000000 Z
+    - 2017-11-29 16:26:43.000000000 Z
+  - - 4
+    - CEMENTO
+    - true
+    - 2017-11-29 16:26:52.000000000 Z
+    - 2017-11-29 16:26:52.000000000 Z
+  - - 5
+    - CARTON
+    - true
+    - 2017-11-29 16:27:09.000000000 Z
+    - 2018-01-02 00:18:16.000000000 Z
+  - - 6
+    - PALAPA
+    - true
+    - 2017-11-29 16:27:21.000000000 Z
+    - 2017-11-29 16:27:21.000000000 Z
+
+---
+cliente:
+  columns:
+  - id_cliente
+  - nombre
+  - ape_paterno
+  - ape_materno
+  - curp
+  - fecha_nac
+  - escolaridad
+  - estado_civil
+  - genero
+  - correo
+  - telefono
+  - num_int
+  - num_ext
+  - codigo_postal
+  - estado_nac
+  - lugar_nac
+  - referencia_calles
+  - dependientes
+  - grupo_social
+  - adquisicion_vivienda
+  - autoconstruccion
+  - descripcion_ubicacion
+  - zona_interes
+  - estatus
+  - calle_id
+  - usuario_id
+  - ocupacion_id
+  - mejoramiento_id
+  - grupo_atencion_id
+  - creado
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - JONATHAN ISMAEL
+    - PULIDO
+    - MAGALLON
+    - PUMJ921219HJCLGN02
+    - 1992-12-19
+    - LICENCIATURA/PROFESIONAL
+    - SOLTERO(A)
+    - MASCULINO
+    - is_jonh@hotmail.com
+    - 
+    - '0'
+    - '1005'
+    - '28983'
+    - JALISCO
+    - GUADALAJARA
+    - ENTRE DE LA ROSA, CALLE CIPRES Y CIRUELO
+    - 0
+    - JEFE(A) FAMILIA
+    - 
+    - 
+    - 
+    - VILLA DE ALVAREZ
+    - true
+    - 3
+    - 0
+    - 1
+    - 1
+    - 1
+    - VERO
+    - 2017-11-29 17:03:31.000000000 Z
+    - 2017-11-29 17:03:31.000000000 Z
+  - - 2
+    - DAVID
+    - ESQUIVEL
+    - HARO
+    - EUHD950814HCMSRV04
+    - 1995-08-14
+    - DOCTORADO
+    - DIVORCIADO(A)
+    - MASCULINO
+    - david14@gmail.com
+    - '3334444121212'
+    - '0'
+    - '5'
+    - '28979'
+    - COLIMA
+    - COLIMA
+    - ENTRE LAGUNA LA MARIA, VOLCANES Y PASEO COCOTEROS
+    - 2
+    - JEFE(A) FAMILIA
+    - NUEVA
+    - 
+    - CASA DE DOS PLANTAS COLOR VERDE
+    - MANZANILLO
+    - true
+    - 3
+    - 0
+    - 2
+    - 0
+    - 2
+    - VERO
+    - 2017-11-29 17:25:47.000000000 Z
+    - 2018-01-03 20:37:10.000000000 Z
+  - - 3
+    - GIOVANI EMMANUEL
+    - SALAZAR
+    - GONZALEZ
+    - SAGG940202HCMLNV09
+    - 1994-02-02
+    - MAESTRIA
+    - DIVORCIADO(A)
+    - MASCULINO
+    - 
+    - 
+    - '0'
+    - '21'
+    - '74622'
+    - COLIMA
+    - VILLA DE ALVAREZ
+    - ENTRE 10 DE MAYO, JUAN ESCUTIA Y INDEPENDENCIA
+    - 3
+    - JEFE(A) FAMILIA
+    - LOTE CON SERVICIOS
+    - 
+    - CASA DE UNA PLANTA COLOR VERDE
+    - MANZANILLO
+    - true
+    - 13
+    - 0
+    - 1
+    - 0
+    - 3
+    - VERO
+    - 2017-11-29 17:55:53.000000000 Z
+    - 2017-11-29 17:55:53.000000000 Z
+  - - 4
+    - JOSE DE JESUS
+    - GONZALEZ
+    - JUAREZ
+    - GOJJ920420HCMNRS06
+    - 1992-04-20
+    - TECNICO SUPERIOR UNIVERSITARIO
+    - SOLTERO(A)
+    - MASCULINO
+    - ower@live.com
+    - '3121042444'
+    - '0'
+    - '613'
+    - '28965'
+    - COLIMA
+    - VILLA DE ALVAREZ
+    - ENTRE ROSA REAL, JAZMIN Y MONTE OBREGON
+    - 0
+    - JEFE(A) FAMILIA
+    - 
+    - 
+    - CERCAS DEL MERCADITO OBREGON
+    - COLIMA
+    - true
+    - 1
+    - 0
+    - 1
+    - 1
+    - 2
+    - VERO
+    - 2017-11-29 18:26:54.000000000 Z
+    - 2018-01-03 20:36:58.000000000 Z
+  - - 5
+    - JORGE LUIS
+    - GUTIERREZ
+    - MARTINEZ
+    - GUMJ931010HCMTRR03
+    - 1993-10-10
+    - LICENCIATURA/PROFESIONAL
+    - SOLTERO(A)
+    - MASCULINO
+    - 
+    - 
+    - '0'
+    - '45'
+    - '14323'
+    - JALISCO
+    - GUADALAJARA
+    - ENTRE ABEDUL, DURAZNOS Y AMARILIS
+    - 0
+    - JEFE(A) FAMILIA
+    - NUEVA
+    - 
+    - 
+    - COLIMA
+    - true
+    - 4
+    - 0
+    - 1
+    - 0
+    - 3
+    - VERO
+    - 2017-11-29 19:15:17.000000000 Z
+    - 2017-11-29 19:15:17.000000000 Z
+  - - 6
+    - KEVIN EVERARDO
+    - GONZALEZ
+    - PEREZ
+    - GOPK980106HJCNRV02
+    - 1998-01-06
+    - BACHILLERATO TECNICO/ESPECIALIZADO
+    - DIVORCIADO(A)
+    - MASCULINO
+    - 
+    - 
+    - '0'
+    - '90'
+    - '45453'
+    - COLIMA
+    - MANZANILLO
+    - ENTRE JUAN ALVAREZ, PORFIRIO DIAZ Y REVOLUCION
+    - 0
+    - JEFE(A) FAMILIA
+    - LOTE CON SERVICIOS
+    - 
+    - 
+    - MANZANILLO
+    - true
+    - 8
+    - 0
+    - 1
+    - 0
+    - 3
+    - VERO
+    - 2017-11-29 19:25:06.000000000 Z
+    - 2017-11-29 19:25:06.000000000 Z
+  - - 7
+    - MARIO ALBERTO
+    - CORDOVA
+    - MENDOZA
+    - COMM970118HCMRNR09
+    - 1997-01-18
+    - LICENCIATURA/PROFESIONAL
+    - SOLTERO(A)
+    - MASCULINO
+    - 
+    - 
+    - '0'
+    - '65'
+    - '84623'
+    - BAJA CALIFORNIA
+    - TIJUANA
+    - ENTRE VOLCANES, TECUANILLO Y LAGUNA LA MARIA
+    - 1
+    - JEFE(A) FAMILIA
+    - USADA
+    - 
+    - 
+    - MANZANILLO
+    - true
+    - 11
+    - 0
+    - 7
+    - 0
+    - 4
+    - VERO
+    - 2017-11-29 19:36:47.000000000 Z
+    - 2017-11-29 19:36:47.000000000 Z
+  - - 8
+    - DIANA
+    - RIVERA
+    - VELASCO
+    - RIVD940323MCMVLN00
+    - 1994-03-23
+    - BACHILLERATO TECNICO/ESPECIALIZADO
+    - CASADO(A)
+    - FEMENINO
+    - 
+    - 
+    - C
+    - '128'
+    - '28978'
+    - COLIMA
+    - TECOMAN
+    - ENTRE HIDALGO, PINO SUAREZ Y MACLOVIO
+    - 0
+    - JEFE(A) FAMILIA
+    - NUEVA
+    - 
+    - CERCAS DE SORIANA
+    - COLIMA
+    - true
+    - 1
+    - 0
+    - 1
+    - 0
+    - 3
+    - VERO
+    - 2017-12-07 03:13:47.000000000 Z
+    - 2018-01-03 20:42:54.000000000 Z
+  - - 9
+    - ANA ISABEL
+    - JUAREZ
+    - RAMOS
+    - JURA640304MCMRMN09
+    - 1964-03-04
+    - PREPARATORIA/BACHILLERATO
+    - CASADO(A)
+    - FEMENINO
+    - 
+    - '3121032577'
+    - B
+    - '268'
+    - '28999'
+    - COLIMA
+    - VILLA DE ALVAREZ
+    - ENTRE MACLOVIO HERRERA, PEREZ MALDONADO Y PROLONGACION JUAREZ
+    - 3
+    - JEFE(A) FAMILIA
+    - NUEVA
+    - 
+    - CERCAS DEL LOTE VALDIO DE LAS CANCHAS TECHADAS
+    - COLIMA
+    - true
+    - 1
+    - 0
+    - 4
+    - 0
+    - 4
+    - GERARDO
+    - 2018-01-07 17:33:23.000000000 Z
+    - 2018-01-07 17:33:23.000000000 Z
+
+---
+contrato:
+  columns:
+  - id_contrato
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 29-11-2017_Contrato1.docx
+    - true
+    - 2017-11-29
+    - 2018-01-02
+  - - 2
+    - 29-11-2017_Contrato2.docx
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 3
+    - 29-11-2017_Contrato3.docx
+    - true
+    - 2017-11-29
+    - 2017-11-29
+
+---
+contrato_tipo_programa:
+  columns:
+  - id
+  - contrato_id
+  - tipo_programa_id
+  records: 
+  - - 1
+    - 1
+    - 1
+  - - 2
+    - 2
+    - 2
+  - - 3
+    - 2
+    - 3
+  - - 4
+    - 2
+    - 3
+  - - 5
+    - 2
+    - 4
+  - - 6
+    - 3
+    - 5
+  - - 7
+    - 2
+    - 6
+  - - 8
+    - 2
+    - 7
+  - - 9
+    - 2
+    - 8
+  - - 10
+    - 2
+    - 9
+  - - 11
+    - 3
+    - 10
+  - - 12
+    - 3
+    - 10
+  - - 13
+    - 3
+    - 11
+
+---
+conyuge:
+  columns:
+  - id_conyuge
+  - nombre
+  - ape_paterno
+  - ape_materno
+  - curp
+  - bienes
+  - lugar_nac
+  - fecha_nac
+  - estatus
+  - cliente_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ORLANDO ANTONIO
+    - GONZALEZ
+    - JUAREZ
+    - GOJO990909HCMNRR02
+    - SEPARADOS
+    - TECOMAN
+    - 1999-09-09
+    - true
+    - 8
+    - 2017-12-07 03:13:47.000000000 Z
+    - 2017-12-07 03:13:47.000000000 Z
+  - - 2
+    - JOSE DE JESUS
+    - GONZALEZ
+    - BARAJAS
+    - GOBJ641114HCMNRS05
+    - SEPARADOS
+    - VILLA DE ALVAREZ
+    - 1964-11-14
+    - true
+    - 9
+    - 2018-01-07 17:33:23.000000000 Z
+    - 2018-01-07 17:33:23.000000000 Z
+
+---
+credito:
+  columns:
+  - clave_credito
+  - costo_metro
+  - costo_terreno
+  - costo_construccion
+  - valor_solucion
+  - enganche
+  - no_subsidio_fed
+  - no_subsidio_est
+  - no_subsidio_mun
+  - no_subsidio_otr
+  - costo_contado
+  - plazo
+  - taza_interes
+  - moratorio
+  - costo_financiamiento
+  - total_pagar
+  - total_abonado
+  - total_descuento
+  - pago_mensual
+  - fecha_inicio
+  - estatus
+  - observaciones
+  - plantilla
+  - saiv
+  - fechas_saiv
+  - tabla
+  - demanda_id
+  - lote_id
+  - reestructura_id
+  - registrado
+  - actualizado
+  - created_at
+  - updated_at
+  records: 
+  - - MA020400001ME
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.375E5
+    - !ruby/object:BigDecimal 27:0.26E4
+    - 
+    - 
+    - 
+    - 
+    - !ruby/object:BigDecimal 27:0.349E5
+    - 60
+    - 0.08
+    - 0.03
+    - !ruby/object:BigDecimal 27:0.7558769639938539E4
+    - !ruby/object:BigDecimal 27:0.4245876963993854E5
+    - !ruby/object:BigDecimal 27:0.70764616066564E3
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.707646160665642E3
+    - 2018-01-31
+    - CANCELADA/REESTRUCTURA
+    - " NO HAY OBSERVACIONES"
+    - '2'
+    - 0
+    - 
+    - '4'
+    - 1
+    - 0
+    - '0'
+    - VERO
+    - 
+    - 2018-01-05
+    - 2018-01-06
+  - - MA020400001ME-RE1
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.3499999E5
+    - !ruby/object:BigDecimal 18:0.0
+    - 
+    - 
+    - 
+    - 
+    - !ruby/object:BigDecimal 27:0.3499999E5
+    - 45
+    - 0.08
+    - 0.03
+    - !ruby/object:BigDecimal 27:0.562781E4
+    - !ruby/object:BigDecimal 27:0.406278E5
+    - !ruby/object:BigDecimal 27:0.90284E3
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.90284E3
+    - 2018-01-13
+    - PAGANDOLA
+    - NO HAY OBSERVACIONES
+    - '2'
+    - 0
+    - 
+    - '4'
+    - 1
+    - 0
+    - MA020400001ME
+    - VERO
+    - 
+    - 2018-01-06
+    - 2018-01-06
+
+---
+datos_empresa:
+  columns:
+  - id_empresa
+  - limite_monto
+  - limite_porcentaje
+  - director
+  - estatus
+  - fecha_director
+  - fecha_limite
+  records: 
+  - - 1
+    - 6000.0
+    - !ruby/object:BigDecimal 18:0.0
+    - ING. ALEJANDRO ORTÍZ CAZARES
+    - false
+    - 2016-11-29
+    - 2016-11-29
+  - - 2
+    - 5000.0
+    - !ruby/object:BigDecimal 18:0.0
+    - ING. ALEJANDRO ORTÍZ CAZARES
+    - true
+    - 2016-11-29
+    - 2017-11-29
+
+---
+demanda:
+  columns:
+  - id_demanda
+  - modulo
+  - tipo_cliente
+  - enganche
+  - observaciones
+  - plantilla
+  - estatus
+  - registrado
+  - actualizado
+  - tipo_programa_id
+  - cliente_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - MA - MANZANILLO
+    - ACREDITADO
+    - 2600.0
+    - NO HAY OBSERVACIONES
+    - '2'
+    - EN PROCESO
+    - VERO
+    - 
+    - 4
+    - 5
+    - 2018-01-05
+    - 2018-01-05 23:55:29.000000000 Z
+  - - 2
+    - CL - COLIMA
+    - SOLICITANTE
+    - 2000.0
+    - NO HAY OBSERVACIONES
+    - '2'
+    - PREPARADO
+    - VERO
+    - 
+    - 4
+    - 2
+    - 2018-01-05
+    - 2018-01-05 20:01:33.000000000 Z
+  - - 3
+    - TE - TECOMAN
+    - SOLICITANTE
+    - 1500.0
+    - NO HAY OBSERVACIONES X2
+    - '3'
+    - PREPARADO
+    - VERO
+    - 
+    - 11
+    - 1
+    - 2018-01-05
+    - 2018-01-05 22:13:55.000000000 Z
+  - - 4
+    - MA - MANZANILLO
+    - AHORRADOR
+    - 1200.0
+    - NO HAY OBSERVACIONES
+    - '2'
+    - ELIMINADO
+    - VERO
+    - 
+    - 4
+    - 3
+    - 2018-01-05
+    - 2018-01-05 22:18:15.000000000 Z
+  - - 5
+    - CL - COLIMA
+    - AHORRADOR
+    - 1000.0
+    - NO HAY OBSERVACIONES
+    - '2'
+    - EN PROCESO
+    - VERO
+    - GERARDO
+    - 10
+    - 8
+    - 2018-01-05
+    - 2018-01-07 22:36:24.000000000 Z
+  - - 6
+    - CL - COLIMA
+    - AHORRADOR
+    - 1375.0
+    - NO HAY OBSERVACIONES
+    - '2'
+    - EN PROCESO
+    - VERO
+    - 
+    - 10
+    - 3
+    - 2018-01-05
+    - 2018-01-05 22:30:12.000000000 Z
+  - - 7
+    - CL - COLIMA
+    - AHORRADOR
+    - 1600.0
+    - NO HAY OBSERVACIONES
+    - '1'
+    - EN PROCESO
+    - VERO
+    - 
+    - 7
+    - 4
+    - 2018-01-05
+    - 2018-01-05 22:32:56.000000000 Z
+
+---
+documento_tipo_programa:
+  columns:
+  - id
+  - documento_id
+  - tipo_programa_id
+  records: 
+  - - 1
+    - 3
+    - 1
+  - - 2
+    - 2
+    - 1
+  - - 3
+    - 5
+    - 1
+  - - 4
+    - 1
+    - 1
+  - - 5
+    - 7
+    - 1
+  - - 6
+    - 6
+    - 1
+  - - 7
+    - 3
+    - 2
+  - - 8
+    - 2
+    - 2
+  - - 9
+    - 5
+    - 2
+  - - 10
+    - 1
+    - 2
+  - - 11
+    - 7
+    - 2
+  - - 12
+    - 6
+    - 2
+  - - 13
+    - 2
+    - 3
+  - - 14
+    - 5
+    - 3
+  - - 15
+    - 1
+    - 3
+  - - 16
+    - 7
+    - 3
+  - - 17
+    - 6
+    - 3
+  - - 18
+    - 3
+    - 4
+  - - 19
+    - 2
+    - 4
+  - - 20
+    - 5
+    - 4
+  - - 21
+    - 1
+    - 4
+  - - 22
+    - 7
+    - 4
+  - - 23
+    - 2
+    - 5
+  - - 24
+    - 5
+    - 5
+  - - 25
+    - 1
+    - 5
+  - - 26
+    - 7
+    - 5
+  - - 27
+    - 3
+    - 6
+  - - 28
+    - 5
+    - 6
+  - - 29
+    - 1
+    - 6
+  - - 30
+    - 7
+    - 6
+  - - 31
+    - 6
+    - 6
+  - - 32
+    - 5
+    - 7
+  - - 33
+    - 1
+    - 7
+  - - 34
+    - 7
+    - 7
+  - - 35
+    - 3
+    - 8
+  - - 36
+    - 5
+    - 8
+  - - 37
+    - 1
+    - 8
+  - - 38
+    - 7
+    - 8
+  - - 39
+    - 2
+    - 9
+  - - 40
+    - 5
+    - 9
+  - - 41
+    - 1
+    - 9
+  - - 42
+    - 7
+    - 9
+  - - 43
+    - 2
+    - 10
+  - - 44
+    - 7
+    - 10
+  - - 45
+    - 6
+    - 10
+  - - 46
+    - 1
+    - 11
+  - - 47
+    - 4
+    - 11
+  - - 48
+    - 7
+    - 11
+
+---
+empleado:
+  columns:
+  - id_empleado
+  - nombre
+  - modulo
+  - apellido_p
+  - apellido_m
+  - telefono
+  - correo
+  - usuario_id
+  - jefe_id
+  - jefe
+  - emp_estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - JESUS
+    - COLIMA
+    - GONZALEZ
+    - JUAREZ
+    - '312104244'
+    - j.jesus.gnz@gmail.com
+    - 1
+    - 0
+    - true
+    - true
+    - 2017-12-15 22:39:15.000000000 Z
+    - 2017-12-19 12:50:25.000000000 Z
+  - - 2
+    - VERONICA
+    - COLIMA
+    - MORALES
+    - PEREZ
+    - '3121021599'
+    - 
+    - 2
+    - 3
+    - false
+    - true
+    - 2017-12-15 22:40:38.000000000 Z
+    - 2018-01-01 22:50:42.000000000 Z
+  - - 3
+    - MARTHA
+    - COLIMA
+    - VELASCO
+    - RIVERA
+    - '3121045866'
+    - martha@live.com
+    - 3
+    - 0
+    - true
+    - true
+    - 2017-12-15 23:21:02.000000000 Z
+    - 2017-12-16 00:00:14.000000000 Z
+  - - 4
+    - OSCAR
+    - COLIMA
+    - RAMIREZ
+    - SALAZAR
+    - '3121203699'
+    - oscar@gmail.com
+    - 4
+    - 3
+    - false
+    - true
+    - 2017-12-15 23:35:55.000000000 Z
+    - 2017-12-18 17:14:24.000000000 Z
+  - - 5
+    - GERARDO
+    - COLIMA
+    - CEBALLOS
+    - LUNA
+    - 
+    - 
+    - 5
+    - 0
+    - false
+    - false
+    - 2017-12-15 23:54:54.000000000 Z
+    - 2018-01-01 22:50:07.000000000 Z
+  - - 6
+    - MARTIN
+    - TECOMAN
+    - GONZALEZ
+    - MONTES
+    - '3121059988'
+    - 
+    - 6
+    - 3
+    - false
+    - true
+    - 2017-12-16 19:40:59.000000000 Z
+    - 2017-12-20 18:57:53.000000000 Z
+  - - 7
+    - ARTURO
+    - VILLA DE ALVAREZ
+    - PEREZ
+    - MONTES
+    - '3121011455'
+    - montes_alto@gmail.com
+    - 7
+    - 3
+    - false
+    - true
+    - 2018-01-07 22:46:33.000000000 Z
+    - 2018-01-07 22:46:33.000000000 Z
+
+---
+estudio_socioeconomico:
+  columns:
+  - id_estudio
+  - antiguedad
+  - nombre_trabajo
+  - telefono_trabajo
+  - servicio_salud
+  - servicio_vivienda
+  - num_int
+  - num_ext
+  - ingr_principal
+  - ingr_secundario
+  - asalariado
+  - gst_alimentacion
+  - gst_luz
+  - gst_transporte
+  - gst_renta
+  - gst_educacion
+  - gst_agua
+  - gst_otros
+  - gst_total
+  - ingr_total
+  - ingr_familiar
+  - no_seg_social
+  - num_cuartos
+  - escrituracion
+  - estado_vivienda
+  - entrevistador
+  - responsable
+  - estatus
+  - cliente_id
+  - calle_id
+  - techo_id
+  - muro_id
+  - piso_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 18
+    - CERVECERIA DE COLIMA
+    - 
+    - NO TIENE
+    - NO TIENE
+    - '0'
+    - '5'
+    - 4000.0
+    - 500.0
+    - true
+    - 1000.0
+    - 300.0
+    - 300.0
+    - 700.0
+    - 1000.0
+    - 200.0
+    - 800.0
+    - 4300.0
+    - 9500.0
+    - 5000.0
+    - 
+    - 2
+    - false
+    - RENTADA
+    - Nadie
+    - Nadie
+    - true
+    - 1
+    - 14
+    - 4
+    - 1
+    - 5
+    - 2017-11-29 17:21:33.000000000 Z
+    - 2017-11-29 17:21:33.000000000 Z
+  - - 2
+    - 36
+    - PINTURAS PROSA
+    - '0919291920484'
+    - NO TIENE
+    - INFONAVIT
+    - '0'
+    - '5'
+    - 10000.0
+    - 1000.0
+    - true
+    - 2000.0
+    - 500.0
+    - 200.0
+    - 1000.0
+    - 3500.0
+    - 500.0
+    - 0.0
+    - 7700.0
+    - 11000.0
+    - 0.0
+    - 
+    - 5
+    - true
+    - PROPIA
+    - Nadie
+    - Nadie
+    - true
+    - 3
+    - 12
+    - 1
+    - 1
+    - 1
+    - 2017-11-29 18:21:09.000000000 Z
+    - 2017-11-29 18:21:09.000000000 Z
+  - - 3
+    - 12
+    - ARQUITECTOS DE COLIMA
+    - '3283293471273'
+    - NO TIENE
+    - PENSIONES
+    - '0'
+    - '64'
+    - 15000.0
+    - 5000.0
+    - true
+    - 2000.0
+    - 700.0
+    - 900.0
+    - 0.0
+    - 1500.0
+    - 800.0
+    - 3200.0
+    - 9100.0
+    - 20000.0
+    - 0.0
+    - 
+    - 4
+    - false
+    - PROPIA
+    - Nadie
+    - Nadie
+    - true
+    - 7
+    - 7
+    - 4
+    - 5
+    - 3
+    - 2017-11-29 19:47:04.000000000 Z
+    - 2017-11-29 19:47:04.000000000 Z
+
+---
+familiar:
+  columns:
+  - id_familiar
+  - nombre
+  - ape_paterno
+  - ape_materno
+  - parentesco
+  - genero
+  - edad
+  - ocupacion
+  - ingresos
+  - cliente_id
+  - updated_at
+  - created_at
+  records: 
+  - - 1
+    - 'SALVADOR '
+    - PULIDO
+    - NARANAJO
+    - PADRE/MADRE
+    - MASCULINO
+    - 55
+    - TAXISTA
+    - 5000.0
+    - 1
+    - 2017-11-29 17:14:37.000000000 Z
+    - 2017-11-29 17:14:37.000000000 Z
+  - - 2
+    - DANIELA
+    - PULIDO
+    - MAGALLON
+    - HERMANO(A)
+    - FEMENINO
+    - 19
+    - ESTUDIANTE
+    - 0.0
+    - 1
+    - 2017-11-29 17:16:58.000000000 Z
+    - 2017-11-29 17:16:58.000000000 Z
+
+---
+lote:
+  columns:
+  - id_lote
+  - no_manzana
+  - no_lote
+  - superficie
+  - norte
+  - sur
+  - este
+  - oeste
+  - noreste
+  - sureste
+  - suroeste
+  - noroeste
+  - ochavo
+  - uso_suelo
+  - clave_catastral
+  - calle
+  - numero
+  - regularizacion
+  - estatus
+  - colonia_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 350
+    - L-1
+    - 222.38
+    - 4.28 M CON CALLE PASEO LOS ENCINOS
+    - 2.38 M CON LOTE 2, 6.50 M CON LOTE 3. 6.50 M CON LOTE 4, 6.50 M CON LOTE 5
+    - 24.47 M CON AV SANTIAGO NORTE
+    - 17.00 M CON LOTE 35
+    - 
+    - 
+    - 
+    - 
+    - 
+    - MD-3
+    - 07-01-25-350-001
+    - PASEO LOS ENCINOS
+    - '119'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 2
+    - 350
+    - L-2
+    - 189.37
+    - 2.38 M CON LOTE 1
+    - 18.49 M CON CALLE PASEO LOS ALMENDROS
+    - 22.97 M CON AV SANTIAGO NORTE
+    - 17.00 M CON LOTE 3
+    - 
+    - 
+    - 
+    - 
+    - '1.12'
+    - MD-3
+    - 07-01-25-350-002
+    - 'PASEO LOS ALMENDRO '
+    - '114'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 3
+    - 350
+    - L-3
+    - 110.5
+    - 6.50 M CON LOTE 1
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 2
+    - 17.00 M CON LOTE 4
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-003
+    - 'PASEO LOS ALMENDRO '
+    - '116'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 4
+    - 350
+    - L-4
+    - 110.5
+    - 6.50 M CON LOTE 1
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 3
+    - 17.00 M CON LOTE 5
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-004
+    - 'PASEO LOS ALMENDRO '
+    - '118'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 5
+    - 350
+    - L-5
+    - 110.5
+    - 6.50 M CON LOTE 1
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 4
+    - 17.00 M CON LOTE 6
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-005
+    - 'PASEO LOS ALMENDRO '
+    - '120'
+    - false
+    - ASIGNADO
+    - 4
+    - 2017-11-29
+    - 2017-11-30
+  - - 6
+    - 350
+    - L-6
+    - 110.5
+    - 6.50 M CON LOTE 35
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 5
+    - 17.00 M CON LOTE 7
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-006
+    - 'PASEO LOS ALMENDRO '
+    - '122'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 7
+    - 350
+    - L-7
+    - 110.5
+    - 6.50 M CON LOTE 34
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 6
+    - 17.00 M CON LOTE 8
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-007
+    - 'PASEO LOS ALMENDRO '
+    - '124'
+    - false
+    - ASIGNADO
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 8
+    - 350
+    - L-8
+    - 110.5
+    - 6.50 M CON LOTE 33
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 7
+    - 17.00 M CON LOTE 9
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-008
+    - 'PASEO LOS ALMENDRO '
+    - '126'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 9
+    - 350
+    - L-9
+    - 110.5
+    - 6.50 M CON LOTE 32
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 8
+    - 17.00 M CON LOTE 10
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-009
+    - 'PASEO LOS ALMENDRO '
+    - '128'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 10
+    - 350
+    - L-10
+    - 110.5
+    - 6.50 M CON LOTE 31
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 9
+    - 17.00 M CON LOTE 11
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-010
+    - 'PASEO LOS ALMENDRO '
+    - '130'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 11
+    - 350
+    - L-11
+    - 110.5
+    - 6.50 M CON LOTE 30
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 10
+    - 17.00 M CON LOTE 12
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-011
+    - 'PASEO LOS ALMENDRO '
+    - '132'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 12
+    - 350
+    - L-12
+    - 110.5
+    - 6.50 M CON LOTE 29
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 11
+    - 17.00 M CON LOTE 13
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-012
+    - 'PASEO LOS ALMENDRO '
+    - '134'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 13
+    - 350
+    - L-13
+    - 110.5
+    - 6.50 M CON LOTE 28
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 12
+    - 17.00 M CON LOTE 14
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-013
+    - 'PASEO LOS ALMENDRO '
+    - '136'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 14
+    - 350
+    - L-14
+    - 110.5
+    - 6.50 M CON LOTE 27
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 13
+    - 17.00 M CON LOTE 15
+    - 
+    - 
+    - 
+    - 
+    - '2.13'
+    - 'H4-U '
+    - 07-01-25-350-014
+    - 'PASEO LOS ALMENDRO '
+    - '138'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 15
+    - 350
+    - L-15
+    - 110.5
+    - 6.50 M CON LOTE 26
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 14
+    - 17.00 M CON LOTE 16
+    - 
+    - 
+    - 
+    - 
+    - '2.11'
+    - 'H4-U '
+    - 07-01-25-350-015
+    - 'PASEO LOS ALMENDRO '
+    - '140'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 16
+    - 350
+    - L-16
+    - 110.5
+    - 6.50 M CON LOTE 25
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 15
+    - 17.00 M CON LOTE 17
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-016
+    - 'PASEO LOS ALMENDRO '
+    - '142'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 17
+    - 350
+    - L-17
+    - 110.5
+    - 6.50 M CON LOTE 24
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 16
+    - 17.00 M CON LOTE 18
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-017
+    - 'PASEO LOS ALMENDRO '
+    - '144'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 18
+    - 350
+    - L-18
+    - 110.5
+    - 6.50 M CON LOTE 23
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 17
+    - 17.00 M CON LOTE 19
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-018
+    - 'PASEO LOS ALMENDRO '
+    - '146'
+    - false
+    - ASIGNADO
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 19
+    - 350
+    - L-19
+    - 110.5
+    - 6.50 M CON LOTE 22
+    - 6.50 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 18
+    - 17.00 M CON LOTE 20
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-019
+    - 'PASEO LOS ALMENDRO '
+    - '148'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 20
+    - 350
+    - L-20
+    - 185.49
+    - 11.06 CON LOTE 21
+    - 9.66 M CON CALLE PASEO LOS ALMENDROS
+    - 17.00 M CON LOTE 19
+    - 5.75 Y 9.76 CON CALLE PASEO DE BUGAMBILIAS
+    - 
+    - 
+    - 
+    - 
+    - '2.09'
+    - MB-3
+    - 07-01-25-350-020
+    - 'PASEO LOS ALMENDRO '
+    - '150'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 21
+    - 350
+    - L-21
+    - 197.18
+    - 11.60 M CON CALLE PASEO LOS ENCINOS
+    - 11.06 M CON LOTE 20
+    - 17.00 M CON LOTE 22
+    - 5.35 Y 10.35 CON CALLE PASEO DE BUGAMBILIA
+    - 
+    - 
+    - 
+    - 
+    - '1.85'
+    - MB-3
+    - 07-01-25-350-021
+    - 'PASEO LOS ENCINOS '
+    - '149'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 22
+    - 350
+    - L-22
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 19
+    - 17.00 M CON LOTE 23
+    - 17.00 M CON LOTE 21
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-022
+    - 'PASEO LOS ENCINOS '
+    - '147'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 23
+    - 350
+    - L-23
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 18
+    - 17.00 M CON LOTE 24
+    - 17.00 M CON LOTE 22
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-023
+    - 'PASEO LOS ENCINOS '
+    - '145'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 24
+    - 350
+    - L-24
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 17
+    - 17.00 M CON LOTE 25
+    - 17.00 M CON LOTE 23
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-024
+    - 'PASEO LOS ENCINOS '
+    - '143'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 25
+    - 350
+    - L-25
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 16
+    - 17.00 M CON LOTE 26
+    - 17.00 M CON LOTE 24
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-025
+    - 'PASEO LOS ENCINOS '
+    - '141'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 26
+    - 350
+    - L-26
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 15
+    - 17.00 M CON LOTE 27
+    - 17.00 M CON LOTE 25
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-026
+    - 'PASEO LOS ENCINOS '
+    - '139'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 27
+    - 350
+    - L-27
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 14
+    - 17.00 M CON LOTE 28
+    - 17.00 M CON LOTE 26
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-027
+    - 'PASEO LOS ENCINOS '
+    - '137'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 28
+    - 350
+    - L-28
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 13
+    - 17.00 M CON LOTE 29
+    - 17.00 M CON LOTE 27
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-028
+    - 'PASEO LOS ENCINOS '
+    - '135'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 29
+    - 350
+    - L-29
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 12
+    - 17.00 M CON LOTE 30
+    - 17.00 M CON LOTE 28
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-029
+    - 'PASEO LOS ENCINOS '
+    - '133'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 30
+    - 350
+    - L-30
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 11
+    - 17.00 M CON LOTE 31
+    - 17.00 M CON LOTE 29
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-030
+    - 'PASEO LOS ENCINOS '
+    - '131'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 31
+    - 350
+    - L-31
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 10
+    - 17.00 M CON LOTE 32
+    - 17.00 M CON LOTE 30
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-031
+    - 'PASEO LOS ENCINOS '
+    - '129'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 32
+    - 350
+    - L-32
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 9
+    - 17.00 M CON LOTE 33
+    - 17.00 M CON LOTE 31
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-032
+    - 'PASEO LOS ENCINOS '
+    - '127'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 33
+    - 350
+    - L-33
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 8
+    - 17.00 M CON LOTE 34
+    - 17.00 M CON LOTE 32
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-033
+    - 'PASEO LOS ENCINOS '
+    - '125'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 34
+    - 350
+    - L-34
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 7
+    - 17.00 M CON LOTE 35
+    - 17.00 M CON LOTE 33
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-034
+    - 'PASEO LOS ENCINOS '
+    - '123'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 35
+    - 350
+    - L-35
+    - 110.5
+    - 6.50 M CON CALLE PASEO LOS ENCINOS
+    - 6.50 M CON LOTE 6
+    - 17.00 M CON LOTE 1
+    - 17.00 M CON LOTE 34
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 'H4-U '
+    - 07-01-25-350-035
+    - 'PASEO LOS ENCINOS '
+    - '121'
+    - false
+    - DISPONIBLE
+    - 4
+    - 2017-11-29
+    - 2017-11-29
+  - - 36
+    - 342
+    - L-1
+    - 1259.476
+    - 120.62 M CON       PARCELA 31
+    - 115.06 M CON CALLE PASEO DE PRIMAVERAS
+    - 14.09 M CON CARRETERA A CHANDIABLO
+    - 4.34 M CON CALLE SIN NOMBRE
+    - 
+    - 
+    - 
+    - 
+    - 2.26,2.12
+    - EV
+    - 07-01-25-342-001
+    - 'PASEO DE PRIMAVERAS '
+    - S/N
+    - false
+    - ASIGNADO
+    - 13
+    - 2017-11-29
+    - 2017-11-29
+  - - 37
+    - 266
+    - L-1
+    - 266.52
+    - 30.15 M CON CALLE PASEO DE PRIMAVERAS
+    - 31.07 M CON LOTE 5
+    - 8.82 Y 0.99 M CON DIABLO
+    - 11.30 M CON LOTE 3
+    - 
+    - 
+    - 
+    - 
+    - '6.07'
+    - CD-3
+    - 07-01-27-266-001
+    - CARRETERA EL DIABLO
+    - '1036'
+    - false
+    - DISPONIBLE
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+  - - 38
+    - 266
+    - L-2
+    - 275.33
+    - 31.07 M CON LOTE 1
+    - 30.67 M CON LOTE 3
+    - 11.31 CON DIABLO
+    - 5.70 M CON LOTE 3
+    - 8.11 CON ORTEGA
+    - 9.18 CON ESTADIO COLIMA
+    - 9.5 CON BAHIA
+    - 18.8 CON TERRITORIOS
+    - '8.2'
+    - CD-3
+    - 07-01-27-266-002
+    - CARRETERA MANZANILLO
+    - '520'
+    - false
+    - DISPONIBLE
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+  - - 39
+    - 266
+    - L-3
+    - 327.22
+    - 30.67 M CON LOTE 2
+    - 29.09 M CON CALLE EDUARDO
+    - 3.60 Y 6.30 M CON DIABLO
+    - 11.40 M CON LOTE 4
+    - 
+    - 
+    - 
+    - 
+    - '1.56'
+    - CD-3
+    - 07-01-27-266-003
+    - CARRETERA LOS MOSQUITOS
+    - '123'
+    - false
+    - DISPONIBLE
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+  - - 40
+    - 266
+    - L-4
+    - 150.88
+    - 6.50 M CON LOTE 31
+    - 6.50 M CON CALLE PASEO LAS PALMERAS
+    - 5.60 C0N LOTE 2 Y 11.40 C0N LOTE 2
+    - 17.00 M CON LOTE 5
+    - 
+    - 
+    - 
+    - 
+    - '2.1'
+    - 'H4-U '
+    - 07-01-27-266-004
+    - PASEO DE LOS DURANGOS
+    - '148'
+    - false
+    - DISPONIBLE
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+  - - 41
+    - 266
+    - L-5
+    - 175.98
+    - 6.50 M CON LOTE 30
+    - 6.50 M CON CALLE PASEO LAS PALMERAS
+    - 17.00 M CON LOTE 5
+    - 17.00 M CON LOTE 6
+    - 
+    - 
+    - 
+    - 
+    - '2.63'
+    - 'H4-U '
+    - 07-01-27-266-005
+    - PRADOS DEL SUR
+    - '156'
+    - false
+    - DISPONIBLE
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+  - - 42
+    - 7
+    - L-7
+    - 70.0
+    - SIN REGISTRO
+    - SIN REGISTRO
+    - SIN REGISTRO
+    - SIN REGISTRO
+    - 
+    - 
+    - 
+    - 
+    - ''
+    - Comercial
+    - 
+    - Romeritos
+    - '4'
+    - true
+    - ASIGNADO
+    - 5
+    - 2017-11-29
+    - 2017-11-29
+
+---
+mensualidad:
+  columns:
+  - clave_mensualidad
+  - no_mensualidad
+  - fecha_vencimiento
+  - descuento_capital
+  - descuento_interes
+  - descuento_moratorio
+  - interes
+  - capital
+  - saldo
+  - resto
+  - estatus
+  - credito_clave
+  records: 
+  - - MA020400001ME-RE11
+    - 1
+    - 2018-02-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.23333326666667E3
+    - !ruby/object:BigDecimal 27:0.66950673333333E3
+    - !ruby/object:BigDecimal 27:0.3499999E5
+    - !ruby/object:BigDecimal 27:0.3972496E5
+    - PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE110
+    - 10
+    - 2018-11-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.19207482086601E3
+    - !ruby/object:BigDecimal 27:0.71076517913399E3
+    - !ruby/object:BigDecimal 27:0.28811223129902E5
+    - !ruby/object:BigDecimal 27:0.315994E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE111
+    - 11
+    - 2018-12-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18733638633845E3
+    - !ruby/object:BigDecimal 27:0.71550361366155E3
+    - !ruby/object:BigDecimal 27:0.28100457950768E5
+    - !ruby/object:BigDecimal 27:0.3069656E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE112
+    - 12
+    - 2019-01-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18256636224738E3
+    - !ruby/object:BigDecimal 27:0.72027363775262E3
+    - !ruby/object:BigDecimal 27:0.27384954337106E5
+    - !ruby/object:BigDecimal 27:0.2979372E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE113
+    - 13
+    - 2019-02-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17776453799569E3
+    - !ruby/object:BigDecimal 27:0.72507546200431E3
+    - !ruby/object:BigDecimal 27:0.26664680699354E5
+    - !ruby/object:BigDecimal 27:0.2889088E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE114
+    - 14
+    - 2019-03-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17293070158233E3
+    - !ruby/object:BigDecimal 27:0.72990929841767E3
+    - !ruby/object:BigDecimal 27:0.2593960523735E5
+    - !ruby/object:BigDecimal 27:0.2798804E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE115
+    - 15
+    - 2019-04-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.16806463959288E3
+    - !ruby/object:BigDecimal 27:0.73477536040712E3
+    - !ruby/object:BigDecimal 27:0.25209695938932E5
+    - !ruby/object:BigDecimal 27:0.270852E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE116
+    - 16
+    - 2019-05-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.16316613719017E3
+    - !ruby/object:BigDecimal 27:0.73967386280983E3
+    - !ruby/object:BigDecimal 27:0.24474920578525E5
+    - !ruby/object:BigDecimal 27:0.2618236E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE117
+    - 17
+    - 2019-06-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.15823497810477E3
+    - !ruby/object:BigDecimal 27:0.74460502189523E3
+    - !ruby/object:BigDecimal 27:0.23735246715715E5
+    - !ruby/object:BigDecimal 27:0.2527952E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE118
+    - 18
+    - 2019-07-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.15327094462546E3
+    - !ruby/object:BigDecimal 27:0.74956905537454E3
+    - !ruby/object:BigDecimal 27:0.2299064169382E5
+    - !ruby/object:BigDecimal 27:0.2437668E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE119
+    - 19
+    - 2019-08-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.14827381758963E3
+    - !ruby/object:BigDecimal 27:0.75456618241037E3
+    - !ruby/object:BigDecimal 27:0.22241072638445E5
+    - !ruby/object:BigDecimal 27:0.2347384E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE12
+    - 2
+    - 2018-03-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.22886988844444E3
+    - !ruby/object:BigDecimal 27:0.67397011155556E3
+    - !ruby/object:BigDecimal 27:0.34330483266667E5
+    - !ruby/object:BigDecimal 27:0.3882212E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE120
+    - 20
+    - 2019-09-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.14324337637357E3
+    - !ruby/object:BigDecimal 27:0.75959662362643E3
+    - !ruby/object:BigDecimal 27:0.21486506456035E5
+    - !ruby/object:BigDecimal 27:0.22571E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE121
+    - 21
+    - 2019-10-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13817939888272E3
+    - !ruby/object:BigDecimal 27:0.76466060111728E3
+    - !ruby/object:BigDecimal 27:0.20726909832408E5
+    - !ruby/object:BigDecimal 27:0.2166816E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE122
+    - 22
+    - 2019-11-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13308166154194E3
+    - !ruby/object:BigDecimal 27:0.76975833845806E3
+    - !ruby/object:BigDecimal 27:0.19962249231291E5
+    - !ruby/object:BigDecimal 27:0.2076532E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE123
+    - 23
+    - 2019-12-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.12794993928555E3
+    - !ruby/object:BigDecimal 27:0.77489006071445E3
+    - !ruby/object:BigDecimal 27:0.19192490892833E5
+    - !ruby/object:BigDecimal 27:0.1986248E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE124
+    - 24
+    - 2020-01-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.12278400554746E3
+    - !ruby/object:BigDecimal 27:0.78005599445254E3
+    - !ruby/object:BigDecimal 27:0.18417600832119E5
+    - !ruby/object:BigDecimal 27:0.1895964E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE125
+    - 25
+    - 2020-02-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.11758363225111E3
+    - !ruby/object:BigDecimal 27:0.78525636774889E3
+    - !ruby/object:BigDecimal 27:0.17637544837666E5
+    - !ruby/object:BigDecimal 27:0.180568E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE126
+    - 26
+    - 2020-03-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.11234858979945E3
+    - !ruby/object:BigDecimal 27:0.79049141020055E3
+    - !ruby/object:BigDecimal 27:0.16852288469917E5
+    - !ruby/object:BigDecimal 27:0.1715396E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE127
+    - 27
+    - 2020-04-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.10707864706478E3
+    - !ruby/object:BigDecimal 27:0.79576135293522E3
+    - !ruby/object:BigDecimal 27:0.16061797059717E5
+    - !ruby/object:BigDecimal 27:0.1625112E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE128
+    - 28
+    - 2020-05-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.10177357137854E3
+    - !ruby/object:BigDecimal 27:0.80106642862146E3
+    - !ruby/object:BigDecimal 27:0.15266035706781E5
+    - !ruby/object:BigDecimal 27:0.1534828E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE129
+    - 29
+    - 2020-06-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.96433128521066E2
+    - !ruby/object:BigDecimal 27:0.80640687147893E3
+    - !ruby/object:BigDecimal 27:0.1446496927816E5
+    - !ruby/object:BigDecimal 27:0.1444544E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE13
+    - 3
+    - 2018-04-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.22437675436741E3
+    - !ruby/object:BigDecimal 27:0.67846324563259E3
+    - !ruby/object:BigDecimal 27:0.33656513155111E5
+    - !ruby/object:BigDecimal 27:0.3791928E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE130
+    - 30
+    - 2020-07-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.91057082711206E2
+    - !ruby/object:BigDecimal 27:0.81178291728879E3
+    - !ruby/object:BigDecimal 27:0.13658562406681E5
+    - !ruby/object:BigDecimal 27:0.135426E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE131
+    - 31
+    - 2020-08-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.85645196595948E2
+    - !ruby/object:BigDecimal 27:0.81719480340405E3
+    - !ruby/object:BigDecimal 27:0.12846779489392E5
+    - !ruby/object:BigDecimal 27:0.1263976E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE132
+    - 32
+    - 2020-09-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.80197231239921E2
+    - !ruby/object:BigDecimal 27:0.82264276876008E3
+    - !ruby/object:BigDecimal 27:0.12029584685988E5
+    - !ruby/object:BigDecimal 27:0.1173692E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE133
+    - 33
+    - 2020-10-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.74712946114854E2
+    - !ruby/object:BigDecimal 27:0.82812705388515E3
+    - !ruby/object:BigDecimal 27:0.11206941917228E5
+    - !ruby/object:BigDecimal 27:0.1083408E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE134
+    - 34
+    - 2020-11-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.69192099088953E2
+    - !ruby/object:BigDecimal 27:0.83364790091105E3
+    - !ruby/object:BigDecimal 27:0.10378814863343E5
+    - !ruby/object:BigDecimal 27:0.993124E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE135
+    - 35
+    - 2020-12-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.63634446416212E2
+    - !ruby/object:BigDecimal 27:0.83920555358379E3
+    - !ruby/object:BigDecimal 27:0.95451669624318E4
+    - !ruby/object:BigDecimal 27:0.90284E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE136
+    - 36
+    - 2021-01-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.58039742725654E2
+    - !ruby/object:BigDecimal 27:0.84480025727435E3
+    - !ruby/object:BigDecimal 27:0.8705961408848E4
+    - !ruby/object:BigDecimal 27:0.812556E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE137
+    - 37
+    - 2021-02-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.52407741010491E2
+    - !ruby/object:BigDecimal 27:0.85043225898951E3
+    - !ruby/object:BigDecimal 27:0.78611611515737E4
+    - !ruby/object:BigDecimal 27:0.722272E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE138
+    - 38
+    - 2021-03-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.46738192617228E2
+    - !ruby/object:BigDecimal 27:0.85610180738277E3
+    - !ruby/object:BigDecimal 27:0.70107288925842E4
+    - !ruby/object:BigDecimal 27:0.631988E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE139
+    - 39
+    - 2021-04-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.41030847234676E2
+    - !ruby/object:BigDecimal 27:0.86180915276532E3
+    - !ruby/object:BigDecimal 27:0.61546270852014E4
+    - !ruby/object:BigDecimal 27:0.541704E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE14
+    - 4
+    - 2018-05-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21985366606319E3
+    - !ruby/object:BigDecimal 27:0.68298633393681E3
+    - !ruby/object:BigDecimal 27:0.32978049909479E5
+    - !ruby/object:BigDecimal 27:0.3701644E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE140
+    - 40
+    - 2021-05-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.35285452882907E2
+    - !ruby/object:BigDecimal 27:0.86755454711709E3
+    - !ruby/object:BigDecimal 27:0.52928179324361E4
+    - !ruby/object:BigDecimal 27:0.45142E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE141
+    - 41
+    - 2021-06-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.29501755902127E2
+    - !ruby/object:BigDecimal 27:0.87333824409787E3
+    - !ruby/object:BigDecimal 27:0.4425263385319E4
+    - !ruby/object:BigDecimal 27:0.361136E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE142
+    - 42
+    - 2021-07-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.23679500941474E2
+    - !ruby/object:BigDecimal 27:0.87916049905853E3
+    - !ruby/object:BigDecimal 27:0.35519251412211E4
+    - !ruby/object:BigDecimal 27:0.270852E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE143
+    - 43
+    - 2021-08-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17818430947751E2
+    - !ruby/object:BigDecimal 27:0.88502156905225E3
+    - !ruby/object:BigDecimal 27:0.26727646421626E4
+    - !ruby/object:BigDecimal 27:0.180568E4
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE144
+    - 44
+    - 2021-09-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.11918287154069E2
+    - !ruby/object:BigDecimal 27:0.89092171284593E3
+    - !ruby/object:BigDecimal 27:0.17877430731104E4
+    - !ruby/object:BigDecimal 27:0.90284000000003E3
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE145
+    - 45
+    - 2021-10-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.597880906843E1
+    - !ruby/object:BigDecimal 27:0.89686119093157E3
+    - !ruby/object:BigDecimal 27:0.89682136026442E3
+    - !ruby/object:BigDecimal 27:0.26E-10
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE15
+    - 5
+    - 2018-06-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21530042383694E3
+    - !ruby/object:BigDecimal 27:0.68753957616306E3
+    - !ruby/object:BigDecimal 27:0.32295063575542E5
+    - !ruby/object:BigDecimal 27:0.361136E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE16
+    - 6
+    - 2018-07-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21071682666252E3
+    - !ruby/object:BigDecimal 27:0.69212317333748E3
+    - !ruby/object:BigDecimal 27:0.31607523999379E5
+    - !ruby/object:BigDecimal 27:0.3521076E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE17
+    - 7
+    - 2018-08-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.20610267217361E3
+    - !ruby/object:BigDecimal 27:0.69673732782639E3
+    - !ruby/object:BigDecimal 27:0.30915400826041E5
+    - !ruby/object:BigDecimal 27:0.3430792E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE18
+    - 8
+    - 2018-09-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.20145775665477E3
+    - !ruby/object:BigDecimal 27:0.70138224334523E3
+    - !ruby/object:BigDecimal 27:0.30218663498215E5
+    - !ruby/object:BigDecimal 27:0.3340508E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME-RE19
+    - 9
+    - 2018-10-13
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.19678187503246E3
+    - !ruby/object:BigDecimal 27:0.70605812496754E3
+    - !ruby/object:BigDecimal 27:0.2951728125487E5
+    - !ruby/object:BigDecimal 27:0.3250224E5
+    - NO PAGADO
+    - MA020400001ME-RE1
+  - - MA020400001ME1
+    - 1
+    - 2018-03-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.23266666666667E3
+    - !ruby/object:BigDecimal 27:0.47497949399898E3
+    - !ruby/object:BigDecimal 27:0.349E5
+    - !ruby/object:BigDecimal 27:0.4245876963993854E5
+    - PAGADO
+    - MA020400001ME
+  - - MA020400001ME10
+    - 10
+    - 2018-12-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.20339598911573E3
+    - !ruby/object:BigDecimal 27:0.50425017154991E3
+    - !ruby/object:BigDecimal 27:0.3050939836736E5
+    - !ruby/object:BigDecimal 27:0.36089954193948E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME11
+    - 11
+    - 2019-01-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.2000343213054E3
+    - !ruby/object:BigDecimal 27:0.50761183936024E3
+    - !ruby/object:BigDecimal 27:0.3000514819581E5
+    - !ruby/object:BigDecimal 27:0.35382308033282E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME12
+    - 12
+    - 2019-02-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.19665024237633E3
+    - !ruby/object:BigDecimal 27:0.51099591828931E3
+    - !ruby/object:BigDecimal 27:0.2949753635645E5
+    - !ruby/object:BigDecimal 27:0.34674661872616E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME13
+    - 13
+    - 2019-03-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.19324360292107E3
+    - !ruby/object:BigDecimal 27:0.51440255774457E3
+    - !ruby/object:BigDecimal 27:0.28986540438161E5
+    - !ruby/object:BigDecimal 27:0.33967015711951E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME14
+    - 14
+    - 2019-04-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18981425253611E3
+    - !ruby/object:BigDecimal 27:0.51783190812954E3
+    - !ruby/object:BigDecimal 27:0.28472137880416E5
+    - !ruby/object:BigDecimal 27:0.33259369551285E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME15
+    - 15
+    - 2019-05-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18636203981524E3
+    - !ruby/object:BigDecimal 27:0.5212841208504E3
+    - !ruby/object:BigDecimal 27:0.27954305972286E5
+    - !ruby/object:BigDecimal 27:0.3255172339062E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME16
+    - 16
+    - 2019-06-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18288681234291E3
+    - !ruby/object:BigDecimal 27:0.52475934832274E3
+    - !ruby/object:BigDecimal 27:0.27433021851436E5
+    - !ruby/object:BigDecimal 27:0.31844077229954E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME17
+    - 17
+    - 2019-07-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17938841668742E3
+    - !ruby/object:BigDecimal 27:0.52825774397822E3
+    - !ruby/object:BigDecimal 27:0.26908262503113E5
+    - !ruby/object:BigDecimal 27:0.31136431069288E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME18
+    - 18
+    - 2019-08-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17586669839423E3
+    - !ruby/object:BigDecimal 27:0.53177946227141E3
+    - !ruby/object:BigDecimal 27:0.26380004759135E5
+    - !ruby/object:BigDecimal 27:0.30428784908623E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME19
+    - 19
+    - 2019-09-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.17232150197909E3
+    - !ruby/object:BigDecimal 27:0.53532465868655E3
+    - !ruby/object:BigDecimal 27:0.25848225296864E5
+    - !ruby/object:BigDecimal 27:0.29721138747957E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME2
+    - 2
+    - 2018-04-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.22950013670667E3
+    - !ruby/object:BigDecimal 27:0.47814602395897E3
+    - !ruby/object:BigDecimal 27:0.34425020506001E5
+    - !ruby/object:BigDecimal 27:0.41751123479273E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME20
+    - 20
+    - 2019-10-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.16875267092118E3
+    - !ruby/object:BigDecimal 27:0.53889348974446E3
+    - !ruby/object:BigDecimal 27:0.25312900638177E5
+    - !ruby/object:BigDecimal 27:0.29013492587291E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME21
+    - 21
+    - 2019-11-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.16516004765622E3
+    - !ruby/object:BigDecimal 27:0.54248611300942E3
+    - !ruby/object:BigDecimal 27:0.24774007148433E5
+    - !ruby/object:BigDecimal 27:0.28305846426626E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME22
+    - 22
+    - 2019-12-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.16154347356949E3
+    - !ruby/object:BigDecimal 27:0.54610268709615E3
+    - !ruby/object:BigDecimal 27:0.24231521035423E5
+    - !ruby/object:BigDecimal 27:0.2759820026596E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME23
+    - 23
+    - 2020-01-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.15790278898885E3
+    - !ruby/object:BigDecimal 27:0.54974337167679E3
+    - !ruby/object:BigDecimal 27:0.23685418348327E5
+    - !ruby/object:BigDecimal 27:0.26890554105294E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME24
+    - 24
+    - 2020-02-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.15423783317767E3
+    - !ruby/object:BigDecimal 27:0.55340832748797E3
+    - !ruby/object:BigDecimal 27:0.2313567497665E5
+    - !ruby/object:BigDecimal 27:0.26182907944629E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME25
+    - 25
+    - 2020-03-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.15054844432775E3
+    - !ruby/object:BigDecimal 27:0.55709771633789E3
+    - !ruby/object:BigDecimal 27:0.22582266649162E5
+    - !ruby/object:BigDecimal 27:0.25475261783963E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME26
+    - 26
+    - 2020-04-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.14683445955216E3
+    - !ruby/object:BigDecimal 27:0.56081170111348E3
+    - !ruby/object:BigDecimal 27:0.22025168932824E5
+    - !ruby/object:BigDecimal 27:0.24767615623297E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME27
+    - 27
+    - 2020-05-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.14309571487807E3
+    - !ruby/object:BigDecimal 27:0.56455044578757E3
+    - !ruby/object:BigDecimal 27:0.21464357231711E5
+    - !ruby/object:BigDecimal 27:0.24059969462632E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME28
+    - 28
+    - 2020-06-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13933204523949E3
+    - !ruby/object:BigDecimal 27:0.56831411542615E3
+    - !ruby/object:BigDecimal 27:0.20899806785923E5
+    - !ruby/object:BigDecimal 27:0.23352323301966E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME29
+    - 29
+    - 2020-07-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13554328446998E3
+    - !ruby/object:BigDecimal 27:0.57210287619566E3
+    - !ruby/object:BigDecimal 27:0.20331492670497E5
+    - !ruby/object:BigDecimal 27:0.22644677141301E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME3
+    - 3
+    - 2018-05-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.22631249654695E3
+    - !ruby/object:BigDecimal 27:0.4813336641187E3
+    - !ruby/object:BigDecimal 27:0.33946874482042E5
+    - !ruby/object:BigDecimal 27:0.41043477318607E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME30
+    - 30
+    - 2020-08-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13172926529534E3
+    - !ruby/object:BigDecimal 27:0.5759168953703E3
+    - !ruby/object:BigDecimal 27:0.19759389794302E5
+    - !ruby/object:BigDecimal 27:0.21937030980635E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME31
+    - 31
+    - 2020-09-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.12788981932621E3
+    - !ruby/object:BigDecimal 27:0.57975634133943E3
+    - !ruby/object:BigDecimal 27:0.19183472898931E5
+    - !ruby/object:BigDecimal 27:0.21229384819969E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME32
+    - 32
+    - 2020-10-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.12402477705061E3
+    - !ruby/object:BigDecimal 27:0.58362138361503E3
+    - !ruby/object:BigDecimal 27:0.18603716557592E5
+    - !ruby/object:BigDecimal 27:0.20521738659304E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME33
+    - 33
+    - 2020-11-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.12013396782651E3
+    - !ruby/object:BigDecimal 27:0.58751219283913E3
+    - !ruby/object:BigDecimal 27:0.18020095173977E5
+    - !ruby/object:BigDecimal 27:0.19814092498638E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME34
+    - 34
+    - 2020-12-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.11621721987425E3
+    - !ruby/object:BigDecimal 27:0.59142894079139E3
+    - !ruby/object:BigDecimal 27:0.17432582981138E5
+    - !ruby/object:BigDecimal 27:0.19106446337972E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME35
+    - 35
+    - 2021-01-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.11227436026898E3
+    - !ruby/object:BigDecimal 27:0.59537180039667E3
+    - !ruby/object:BigDecimal 27:0.16841154040346E5
+    - !ruby/object:BigDecimal 27:0.18398800177307E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME36
+    - 36
+    - 2021-02-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.108305214933E3
+    - !ruby/object:BigDecimal 27:0.59934094573264E3
+    - !ruby/object:BigDecimal 27:0.1624578223995E5
+    - !ruby/object:BigDecimal 27:0.17691154016641E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME37
+    - 37
+    - 2021-03-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.10430960862811E3
+    - !ruby/object:BigDecimal 27:0.60333655203753E3
+    - !ruby/object:BigDecimal 27:0.15646441294217E5
+    - !ruby/object:BigDecimal 27:0.16983507855975E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME38
+    - 38
+    - 2021-04-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.10028736494786E3
+    - !ruby/object:BigDecimal 27:0.60735879571778E3
+    - !ruby/object:BigDecimal 27:0.15043104742179E5
+    - !ruby/object:BigDecimal 27:0.1627586169531E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME39
+    - 39
+    - 2021-05-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.96238306309745E2
+    - !ruby/object:BigDecimal 27:0.6114078543559E3
+    - !ruby/object:BigDecimal 27:0.14435745946462E5
+    - !ruby/object:BigDecimal 27:0.15568215534644E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME4
+    - 4
+    - 2018-06-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.22310360545282E3
+    - !ruby/object:BigDecimal 27:0.48454255521282E3
+    - !ruby/object:BigDecimal 27:0.33465540817923E5
+    - !ruby/object:BigDecimal 27:0.40335831157942E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME40
+    - 40
+    - 2021-06-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.92162253947372E2
+    - !ruby/object:BigDecimal 27:0.61548390671827E3
+    - !ruby/object:BigDecimal 27:0.13824338092106E5
+    - !ruby/object:BigDecimal 27:0.14860569373978E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME41
+    - 41
+    - 2021-07-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.88059027902584E2
+    - !ruby/object:BigDecimal 27:0.61958713276306E3
+    - !ruby/object:BigDecimal 27:0.13208854185388E5
+    - !ruby/object:BigDecimal 27:0.14152923213313E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME42
+    - 42
+    - 2021-08-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.83928447017497E2
+    - !ruby/object:BigDecimal 27:0.62371771364815E3
+    - !ruby/object:BigDecimal 27:0.12589267052624E5
+    - !ruby/object:BigDecimal 27:0.13445277052647E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME43
+    - 43
+    - 2021-09-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.79770328926509E2
+    - !ruby/object:BigDecimal 27:0.62787583173913E3
+    - !ruby/object:BigDecimal 27:0.11965549338976E5
+    - !ruby/object:BigDecimal 27:0.12737630891982E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME44
+    - 44
+    - 2021-10-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.75584490048248E2
+    - !ruby/object:BigDecimal 27:0.63206167061739E3
+    - !ruby/object:BigDecimal 27:0.11337673507237E5
+    - !ruby/object:BigDecimal 27:0.12029984731316E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME45
+    - 45
+    - 2021-11-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.71370745577465E2
+    - !ruby/object:BigDecimal 27:0.63627541508818E3
+    - !ruby/object:BigDecimal 27:0.1070561183662E5
+    - !ruby/object:BigDecimal 27:0.1132233857065E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME46
+    - 46
+    - 2021-12-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.67128909476877E2
+    - !ruby/object:BigDecimal 27:0.64051725118876E3
+    - !ruby/object:BigDecimal 27:0.10069336421532E5
+    - !ruby/object:BigDecimal 27:0.10614692409985E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME47
+    - 47
+    - 2022-01-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.62858794468952E2
+    - !ruby/object:BigDecimal 27:0.64478736619669E3
+    - !ruby/object:BigDecimal 27:0.94288191703429E4
+    - !ruby/object:BigDecimal 27:0.9907046249319E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME48
+    - 48
+    - 2022-02-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.58560212027641E2
+    - !ruby/object:BigDecimal 27:0.649085948638E3
+    - !ruby/object:BigDecimal 27:0.87840318041462E4
+    - !ruby/object:BigDecimal 27:0.91994000886533E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME49
+    - 49
+    - 2022-03-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.54232972370054E2
+    - !ruby/object:BigDecimal 27:0.65341318829559E3
+    - !ruby/object:BigDecimal 27:0.81349458555082E4
+    - !ruby/object:BigDecimal 27:0.84917539279877E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME5
+    - 5
+    - 2018-07-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.2198733217514E3
+    - !ruby/object:BigDecimal 27:0.48777283891424E3
+    - !ruby/object:BigDecimal 27:0.32980998262711E5
+    - !ruby/object:BigDecimal 27:0.39628184997276E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME50
+    - 50
+    - 2022-04-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.49876884448084E2
+    - !ruby/object:BigDecimal 27:0.65776927621756E3
+    - !ruby/object:BigDecimal 27:0.74815326672126E4
+    - !ruby/object:BigDecimal 27:0.7784107767322E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME51
+    - 51
+    - 2022-05-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.45491755939967E2
+    - !ruby/object:BigDecimal 27:0.66215440472568E3
+    - !ruby/object:BigDecimal 27:0.6823763390995E4
+    - !ruby/object:BigDecimal 27:0.70764616066564E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME52
+    - 52
+    - 2022-06-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.41077393241796E2
+    - !ruby/object:BigDecimal 27:0.66656876742385E3
+    - !ruby/object:BigDecimal 27:0.61616089862693E4
+    - !ruby/object:BigDecimal 27:0.63688154459908E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME53
+    - 53
+    - 2022-07-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.3663360145897E2
+    - !ruby/object:BigDecimal 27:0.67101255920667E3
+    - !ruby/object:BigDecimal 27:0.54950402188455E4
+    - !ruby/object:BigDecimal 27:0.56611692853251E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME54
+    - 54
+    - 2022-08-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.32160184397592E2
+    - !ruby/object:BigDecimal 27:0.67548597626805E3
+    - !ruby/object:BigDecimal 27:0.48240276596388E4
+    - !ruby/object:BigDecimal 27:0.49535231246595E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME55
+    - 55
+    - 2022-09-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.27656944555805E2
+    - !ruby/object:BigDecimal 27:0.67998921610984E3
+    - !ruby/object:BigDecimal 27:0.41485416833708E4
+    - !ruby/object:BigDecimal 27:0.42458769639938E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME56
+    - 56
+    - 2022-10-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.23123683115073E2
+    - !ruby/object:BigDecimal 27:0.68452247755057E3
+    - !ruby/object:BigDecimal 27:0.34685524672609E4
+    - !ruby/object:BigDecimal 27:0.35382308033282E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME57
+    - 57
+    - 2022-11-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.18560199931402E2
+    - !ruby/object:BigDecimal 27:0.68908596073424E3
+    - !ruby/object:BigDecimal 27:0.27840299897104E4
+    - !ruby/object:BigDecimal 27:0.28305846426626E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME58
+    - 58
+    - 2022-12-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.13966293526508E2
+    - !ruby/object:BigDecimal 27:0.69367986713913E3
+    - !ruby/object:BigDecimal 27:0.20949440289761E4
+    - !ruby/object:BigDecimal 27:0.21229384819969E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME59
+    - 59
+    - 2023-01-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.9341761078913E1
+    - !ruby/object:BigDecimal 27:0.69830439958673E3
+    - !ruby/object:BigDecimal 27:0.1401264161837E4
+    - !ruby/object:BigDecimal 27:0.14152923213313E4
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME6
+    - 6
+    - 2018-08-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21662150282531E3
+    - !ruby/object:BigDecimal 27:0.49102465784033E3
+    - !ruby/object:BigDecimal 27:0.32493225423796E5
+    - !ruby/object:BigDecimal 27:0.3892053883661E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME60
+    - 60
+    - 2023-02-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.4686398415002E1
+    - !ruby/object:BigDecimal 27:0.70295976225064E3
+    - !ruby/object:BigDecimal 27:0.70295976225027E3
+    - !ruby/object:BigDecimal 27:0.70764616066563E3
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME7
+    - 7
+    - 2018-09-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21334800510637E3
+    - !ruby/object:BigDecimal 27:0.49429815555927E3
+    - !ruby/object:BigDecimal 27:0.32002200765956E5
+    - !ruby/object:BigDecimal 27:0.38212892675945E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME8
+    - 8
+    - 2018-10-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.21005268406931E3
+    - !ruby/object:BigDecimal 27:0.49759347659633E3
+    - !ruby/object:BigDecimal 27:0.31507902610397E5
+    - !ruby/object:BigDecimal 27:0.37505246515279E5
+    - NO PAGADO
+    - MA020400001ME
+  - - MA020400001ME9
+    - 9
+    - 2018-11-03
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 18:0.0
+    - !ruby/object:BigDecimal 27:0.20673539422534E3
+    - !ruby/object:BigDecimal 27:0.50091076644031E3
+    - !ruby/object:BigDecimal 27:0.310103091338E5
+    - !ruby/object:BigDecimal 27:0.36797600354613E5
+    - NO PAGADO
+    - MA020400001ME
+
+---
+programa:
+  columns:
+  - id_programa
+  - nombre
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - LOTES CON SERVICIOS
+    - true
+    - 2017-11-29 15:23:02.000000000 Z
+    - 2017-11-29 15:23:02.000000000 Z
+  - - 2
+    - MEJORAMIENTO DE VIVIENDA
+    - true
+    - 2017-11-29 15:24:42.000000000 Z
+    - 2017-11-29 15:24:42.000000000 Z
+  - - 3
+    - VIVIENDA PROGRESIVA
+    - true
+    - 2017-11-29 15:24:58.000000000 Z
+    - 2017-11-29 15:24:58.000000000 Z
+  - - 4
+    - PIES DE CASA
+    - true
+    - 2017-11-29 15:25:12.000000000 Z
+    - 2017-11-29 15:25:12.000000000 Z
+  - - 5
+    - URBANIZACION
+    - true
+    - 2017-11-29 15:25:24.000000000 Z
+    - 2017-11-29 15:25:24.000000000 Z
+  - - 6
+    - MEJORAMIENTO FONHAPO
+    - true
+    - 2017-11-29 15:25:51.000000000 Z
+    - 2017-11-29 15:25:51.000000000 Z
+  - - 7
+    - ESCRITURACION
+    - true
+    - 2017-11-29 15:26:06.000000000 Z
+    - 2017-11-29 15:26:06.000000000 Z
+  - - 8
+    - LOTE Y PIE DE CASA
+    - true
+    - 2017-11-29 15:26:19.000000000 Z
+    - 2017-11-29 15:26:19.000000000 Z
+  - - 9
+    - CASA EN LOTE PROPIO
+    - true
+    - 2017-11-29 15:26:33.000000000 Z
+    - 2017-11-29 15:26:33.000000000 Z
+  - - 10
+    - AFILIADOS
+    - true
+    - 2017-11-29 15:26:44.000000000 Z
+    - 2018-01-01 23:01:04.000000000 Z
+  - - 11
+    - VIVIENDA
+    - true
+    - 2017-11-29 15:27:23.000000000 Z
+    - 2017-11-29 15:27:23.000000000 Z
+  - - 12
+    - AHORRO HIPOTECARIO
+    - true
+    - 2017-11-29 15:28:08.000000000 Z
+    - 2017-11-29 15:28:08.000000000 Z
+
+---
+referencia:
+  columns:
+  - id_referencia
+  - nombre
+  - ape_paterno
+  - ape_materno
+  - domicilio
+  - telefono
+  - parentesco
+  - genero
+  - cliente_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - PEDRO
+    - PARAMO
+    - RAMIREZ
+    - 'AVENIDA MANZANILLO #613'
+    - '3124568798'
+    - SIN PARENTESCO
+    - MASCULINO
+    - 1
+    - 2017-11-29 17:19:08.000000000 Z
+    - 2017-11-29 17:19:08.000000000 Z
+  - - 2
+    - JUAN
+    - GONZALES
+    - MORA
+    - 'CALLE DE LA ROSA #589'
+    - '3125487963'
+    - SIN PARENTESCO
+    - MASCULINO
+    - 1
+    - 2017-11-29 17:19:53.000000000 Z
+    - 2017-11-29 17:19:53.000000000 Z
+
+---
+seguimiento:
+  columns:
+  - id_seguimiento
+  - descripcion_seguimiento
+  - restriccion
+  - monto_convenio
+  - convenio_pagado
+  - abonado_convenio
+  - estatus_seguimiento
+  - situacion_id
+  - credito_clave
+  - registrado
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ESTE CLIENTE DEBE CUMPLIR DICHA CANTIDAD
+    - CONVENIO
+    - 15000.0
+    - false
+    - 0.0
+    - false
+    - 3
+    - CL010100003PNSZ-RE1
+    - ''
+    - 2017-11-30 10:57:12.000000000 Z
+    - 2017-11-30 11:01:32.000000000 Z
+  - - 2
+    - 5 MIL JUNTOS Y LUEGO PAGOS DE 1500
+    - CONVENIO
+    - 10000.0
+    - true
+    - 10000.0
+    - true
+    - 3
+    - CL010100003PNSZ-RE1
+    - ''
+    - 2017-11-30 11:01:59.000000000 Z
+    - 2017-11-30 11:05:17.000000000 Z
+  - - 3
+    - POR NO PAGAR A TIEMPO
+    - CONVENIO
+    - 15000.0
+    - true
+    - 15000.0
+    - false
+    - 4
+    - CL040600002ME
+    - ''
+    - 2017-12-09 23:22:56.000000000 Z
+    - 2017-12-10 01:55:27.000000000 Z
+  - - 4
+    - ASD
+    - CONGELACION
+    - 0.0
+    - false
+    - 0.0
+    - false
+    - 6
+    - CL040600002ME
+    - ''
+    - 2017-12-10 01:57:21.000000000 Z
+    - 2017-12-10 02:00:38.000000000 Z
+
+---
+situacion:
+  columns:
+  - id_situacion
+  - situacion
+  - status
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - CASA DESHABITADA
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 2
+    - NO LOCALIZADO
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 3
+    - ACUERDOS
+    - true
+    - 2017-11-29
+    - 2018-01-02
+  - - 4
+    - COBRO ESPECIAL
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 5
+    - NO REALIZAR DESCUENTO
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 6
+    - FALTAN FIRMAS
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 7
+    - CASA PRESTADA
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 8
+    - OBSERVACIONES
+    - true
+    - 2017-11-29
+    - 2017-11-29
+
+---
+solicitud_eliminacion:
+  columns:
+  - id_solicitud
+  - descripcion
+  - credito
+  - usuario
+  - responsable
+  - status
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - YA SE ARREPINTIO
+    - MA020400001ME-RE1
+    - VERO
+    - GERARDO
+    - NO APROBADO
+    - 2018-01-01
+    - 2018-01-06
+  - - 2
+    - YA SE ARREPINTIO X2
+    - MA020400001ME-RE1
+    - VERO
+    - GERARDO
+    - APROBADO
+    - 2018-01-06
+    - 2018-01-07
+
+---
+subsidio:
+  columns:
+  - id_subsidio
+  - tipo
+  - organizacion
+  - clave
+  - valor
+  - estatus
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - FEDERAL
+    - INFONAVIT
+    - '1005478'
+    - 15000.0
+    - true
+    - 2017-11-29
+    - 2018-01-02
+  - - 2
+    - FEDERAL
+    - CONAVI
+    - '2805778'
+    - 30000.0
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 3
+    - ESTATAL
+    - INSUVI
+    - '7458902'
+    - 5000.0
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 4
+    - MUNICIPAL
+    - GOB MUNICIPAL
+    - '5489203'
+    - 10000.0
+    - true
+    - 2017-11-29
+    - 2017-11-29
+  - - 5
+    - OTROS
+    - GOB ESTATAL
+    - '8462510'
+    - 30000.0
+    - true
+    - 2017-11-29
+    - 2017-11-29
+
+---
+tipo_programa:
+  columns:
+  - id_tipo_programa
+  - nombre
+  - descripcion
+  - estatus
+  - plantilla
+  - programa_id
+  - banco_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - CLASE A
+    - LOTE CON SERVICIOS CLASE A
+    - true
+    - '1'
+    - 1
+    - 2
+    - 2017-11-29 16:05:15.000000000 Z
+    - 2017-11-29 16:05:15.000000000 Z
+  - - 2
+    - CLASE B
+    - "LOTE CON SERVICIOS CLASE B\r\n"
+    - false
+    - '1'
+    - 1
+    - 2
+    - 2017-11-29 16:09:20.000000000 Z
+    - 2018-01-01 23:01:16.000000000 Z
+  - - 3
+    - TECHOS DE LAMINA DE ASBESTO
+    - MEJORAMIENTO DE TECHO CON LAMINAS DE ASBESTO
+    - true
+    - '2'
+    - 2
+    - 1
+    - 2017-11-29 16:13:52.000000000 Z
+    - 2017-11-29 16:13:52.000000000 Z
+  - - 4
+    - RECAMARA
+    - MEJORAMIENTO DE VIVIENDA AGREGANDO RECAMARA
+    - true
+    - '2'
+    - 2
+    - 1
+    - 2017-11-29 16:16:08.000000000 Z
+    - 2017-11-29 16:16:08.000000000 Z
+  - - 5
+    - REESTRUCTURACION
+    - REESTRUCTURACION VIVIENDA
+    - true
+    - '2'
+    - 3
+    - 3
+    - 2017-11-29 16:18:15.000000000 Z
+    - 2017-11-29 16:18:15.000000000 Z
+  - - 6
+    - VIVIENDA RURAL
+    - PIE DE CASA VIVIENDA RURAL
+    - true
+    - '2'
+    - 4
+    - 1
+    - 2017-11-29 16:22:18.000000000 Z
+    - 2017-11-29 16:22:18.000000000 Z
+  - - 7
+    - CONAVI
+    - PIES DE CASA CONAVI
+    - true
+    - '1'
+    - 4
+    - 1
+    - 2017-11-29 16:24:06.000000000 Z
+    - 2017-11-29 16:24:06.000000000 Z
+  - - 8
+    - INTERNOS
+    - URBANIZACION INTERNOS
+    - true
+    - '2'
+    - 5
+    - 1
+    - 2017-11-29 16:26:27.000000000 Z
+    - 2017-11-29 16:26:27.000000000 Z
+  - - 9
+    - EMPEDRADOS
+    - "URBANIZACION EMPEDRADOS\r\n"
+    - true
+    - '2'
+    - 5
+    - 1
+    - 2017-11-29 16:28:34.000000000 Z
+    - 2017-11-29 16:28:34.000000000 Z
+  - - 10
+    - AMPLIACION DE VIVIENDA
+    - RECAMARA ADICIONAL
+    - true
+    - '2'
+    - 6
+    - 3
+    - 2017-11-29 16:33:56.000000000 Z
+    - 2018-01-01 22:42:09.000000000 Z
+  - - 11
+    - REGULARIZACION Y ESCRITURACION
+    - REGULARIZACION Y ESCRITURACION
+    - true
+    - '3'
+    - 7
+    - 3
+    - 2017-11-29 16:35:47.000000000 Z
+    - 2017-11-29 16:35:47.000000000 Z
+
+---
+users:
+  columns:
+  - id
+  - nombre
+  - password
+  - curp
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - jonathan
+    - sigrros123
+    - '12460729'
+    - 
+    - 
+  - - 2
+    - ismael
+    - password
+    - pumj921219hjclgn02
+    - 2018-02-26 00:00:00.000000000 Z
+    - 2018-02-26 00:00:00.000000000 Z
+
+---
+usuario:
+  columns:
+  - id_usuario
+  - usuario
+  - password
+  - perfil
+  - modulos
+  - permisos
+  - estatus_us
+  - remember_token
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - JESUS
+    - "$2y$10$MHRuLEqMTzX6m3SDTQzQM.TP9GcYXgvHud0nx1Xini9ytRgEKHH3u"
+    - COMERCIALIZACION
+    - SOLICITUD|ESTUDIO|DEMANDA|CONTRATACION|ENGANCHE
+    - '100'
+    - true
+    - pGllqHOy7DhF2Rc8S3KEB6dkD81KD7zz6VTRZCpwurwqnSGJIhbDg8TobsAZ
+    - 2017-12-15 22:39:15.000000000 Z
+    - 2017-12-19 12:50:25.000000000 Z
+  - - 2
+    - VERO
+    - "$2y$10$sAdZmw6nlh.nwf8vptiVUe1dZYuwEZGx9xwbRQdc1KUezVFZIeLN2"
+    - COMERCIALIZACION
+    - CAJA
+    - '50'
+    - true
+    - qMUKVmhS3u0aDBjSVjhcsdBcvPPQq4GhOSpEum9xlVcEkiL8FK6EGqkeuemR
+    - 2017-12-15 22:40:38.000000000 Z
+    - 2018-01-07 18:14:21.000000000 Z
+  - - 3
+    - MARTHA
+    - "$2y$10$afOvb9DfzPV9C2Q1esxNJeQMfo/XQDcJtri7Vqk1qJw2IXdyiu01i"
+    - COMERCIALIZACION
+    - SOLICITUD|ESTUDIO
+    - '100'
+    - true
+    - ''
+    - 2017-12-15 23:21:02.000000000 Z
+    - 2017-12-16 00:00:13.000000000 Z
+  - - 4
+    - OSCAR
+    - "$2y$10$FG0V8.MxiAlqN3VusQ4F.u9oukWFlDPcU0REhEcdwp4QEGoLOHVTW"
+    - JURIDICO
+    - DEMANDA|CONTRATACION|SOLICITUD
+    - '75'
+    - true
+    - xuYnTu04QyJV9tIGYmasDOx6GatwYRwP7TAYGtiNlfw2JDodovy8z2pn7df6
+    - 2017-12-15 23:35:55.000000000 Z
+    - 2017-12-18 17:02:57.000000000 Z
+  - - 5
+    - GERARDO
+    - "$2y$10$OLoQeM1sFV8mX9/YuPwb.uOSfd963lwegtX3TfOz4bhou.Mvt.xGS"
+    - ADMINISTRADOR
+    - ADMON
+    - '100'
+    - true
+    - kyZ7vlz76WcqA0iAP3uUyok9zXYglYvf0loEJlI7kewkaf3LmIKn7HUbhTQH
+    - 2017-12-15 23:54:54.000000000 Z
+    - 2018-01-07 22:46:52.000000000 Z
+  - - 6
+    - MARTIN
+    - "$2y$10$X3QdrvyWG3anUySZQNMkdekZA3PmMgN0QSDJyuGRH1hDOBTSMCv7u"
+    - JURIDICO
+    - DEMANDA|CONTRATACION|SEGUIMIENTO
+    - '50'
+    - true
+    - FkwKsl5AxoF8X3R9WZQa6fUXVrTQQDRDxynUGLbV4Gf5w4dwueMAMQLcdT1l
+    - 2017-12-16 19:40:59.000000000 Z
+    - 2017-12-20 18:57:53.000000000 Z
+  - - 7
+    - MONTES
+    - "$2y$10$Jj/GNxsCDkrjHZ83.3uuLulp1cs8ewqGoDmZfrd0lZ1wS8Oq3Jc1K"
+    - FORANEO
+    - ESTUDIO
+    - '100'
+    - true
+    - ''
+    - 2018-01-07 22:46:33.000000000 Z
+    - 2018-01-07 22:46:33.000000000 Z
